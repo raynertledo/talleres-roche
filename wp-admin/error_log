@@ -1,0 +1,15 @@
+[15-Jun-2022 13:49:09 UTC] PHP Warning:  Division by zero in /home2/infodevelop/roche.informagedevelop.com/wp-admin/includes/class-custom-image-header.php on line 1276
+[15-Jun-2022 19:47:25 UTC] Database dump method: mysqldump
+[15-Jun-2022 19:47:25 UTC] Class ZipArchive
+[15-Jun-2022 19:47:25 UTC] number_of_existing_backups
+[15-Jun-2022 19:47:25 UTC] 1
+[15-Jun-2022 19:47:25 UTC] number_of_backups_from_user
+[15-Jun-2022 19:47:25 UTC] 
+[16-Jun-2022 01:46:04 UTC] Error Connection was killed de la base de datos de WordPress para la consulta 
+			SELECT   wp_posts.ID
+			FROM wp_posts 
+			WHERE 1=1  AND wp_posts.post_parent = 69  AND wp_posts.post_type = 'revision' AND ((wp_posts.post_status = 'inherit'))
+			
+			ORDER BY wp_posts.post_date DESC, wp_posts.ID DESC
+			
+		 realizada por require('wp-admin/edit-form-blocks.php'), register_and_do_post_meta_boxes, wp_get_post_revisions, get_children, get_posts, WP_Query->query, WP_Query->get_posts
