@@ -100,11 +100,22 @@
 
 jQuery(document).ready(function(){
 	jQuery(".title-taller-description").click(function(){
-		jQuery(".content-taller-description").toggleClass("d-none");
-		jQuery(".content-taller-description").toggleClass("d-block");
-		jQuery(".content-taller-description").toggleClass("invisible");
-		jQuery(".content-taller-description").toggleClass("visible");
-		jQuery(".content-taller-description").toggleClass("opacidad1");
+		//jQuery(".content-taller-description").toggleClass("d-none");
+		var title_actual = jQuery(this);
+		var title_actual_id = title_actual.attr("id");
+		var title_actual_post_id = title_actual_id.substr(13);
+
+		//jQuery(".content-taller-description").toggleClass("d-block");
+		//jQuery(".content-taller-description").toggleClass("positioning");
+		
+		//jQuery(".content-taller-description").toggleClass("invisible");
+		//jQuery(".content-taller-description").toggleClass("visible");
+
+		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("d-block");
+		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("positioning");
+		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("invisible");
+		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("visible");
+		//jQuery(".content-taller-description").toggleClass("opacidad1");
 		//jQuery(".content-taller-description").toggle("slow");
 
 		jQuery(".description-hidden").toggleClass("d-none");
@@ -117,35 +128,11 @@ jQuery(document).ready(function(){
 		jQuery(".description-showed").toggleClass("visible");
 		jQuery(".description-showed").toggleClass("invisible");
 
-
+		jQuery(".description-hidden").toggleClass("visible");
 		jQuery(".title-taller-description").toggleClass("cerrado");
+
+		jQuery(".description-showed").attr("transform","rotate(360deg)");
 	});
-
-
-
-	/*jQuery(".taller-video-presentacion:not('.active')").click(function(){alert("gggg");
-		var actual = jQuery(".taller-video-presentacion:not('.active')");
-		jQuery(".taller-video-presentacion").each(function() {
-												  jQuery( this ).removeClass( "active" );
-												});		
-		actual.addClass("active");
-
-		if(jQuery(".taller-video-presentacion.active").hasClass("video")){
-			jQuery(".t-video").addClass("d-block");
-			jQuery(".t-video").removeClass("d-none");
-
-			jQuery(".t-presentation").addClass("d-none");
-			jQuery(".t-presentation").removeClass("d-block");
-		}
-
-		if(jQuery(".taller-video-presentacion.active").hasClass("presentacion")){
-			jQuery(".t-video").removeClass("d-block");
-			jQuery(".t-video").addClass("d-none");
-
-			jQuery(".t-presentation").removeClass("d-none");
-			jQuery(".t-presentation").addClass("d-block");
-		}		
-	});*/
 
 	jQuery(".taller-video-presentacion.video").click(function(){
 		var actual = jQuery(this);
@@ -172,7 +159,7 @@ jQuery(document).ready(function(){
 		var actual = jQuery(this);
 		var actual_id = actual.attr("id");
 		var post_id = actual_id.substr(13);		
-		console.log(post_id);
+		
 		if(!actual.hasClass("active")){
 			jQuery("#video_"+post_id).removeClass( "active" );
 			actual.addClass("active");

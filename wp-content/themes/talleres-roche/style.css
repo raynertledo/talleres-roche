@@ -717,7 +717,11 @@ textarea {
   clear: both;
   margin: 0 0 1.5em; }
 
-/* line 26, sass/components/content/_posts-and-pages.scss */
+/* line 24, sass/components/content/_posts-and-pages.scss */
+header.site-header {
+  z-index: 99; }
+
+/* line 28, sass/components/content/_posts-and-pages.scss */
 #page .entry-header-talleres {
   min-height: 250px;
   background-size: cover;
@@ -727,117 +731,120 @@ textarea {
   font-family: 'Inter', sans-serif;
   display: flex;
   align-items: center; }
-  /* line 35, sass/components/content/_posts-and-pages.scss */
+  /* line 37, sass/components/content/_posts-and-pages.scss */
   #page .entry-header-talleres div {
     max-width: 1140px;
     padding: 0 30px; }
     @media (max-width: 767px) {
-      /* line 35, sass/components/content/_posts-and-pages.scss */
+      /* line 37, sass/components/content/_posts-and-pages.scss */
       #page .entry-header-talleres div {
         padding: 0 17px; } }
-    /* line 41, sass/components/content/_posts-and-pages.scss */
+    /* line 43, sass/components/content/_posts-and-pages.scss */
     #page .entry-header-talleres div h1, #page .entry-header-talleres div h2 {
       font-weight: 500;
       font-size: 49px;
       margin-top: 0;
       margin-bottom: 20px; }
-    /* line 47, sass/components/content/_posts-and-pages.scss */
+    /* line 49, sass/components/content/_posts-and-pages.scss */
     #page .entry-header-talleres div p {
       font-weight: 400;
       font-size: 16px;
       margin-bottom: 0; }
-/* line 54, sass/components/content/_posts-and-pages.scss */
+/* line 56, sass/components/content/_posts-and-pages.scss */
 #page .talleres_descripcion {
   max-width: 1140px;
   padding: 50px 10px 0 10px;
   font-family: 'Roboto', sans-serif; }
-  /* line 58, sass/components/content/_posts-and-pages.scss */
+  /* line 60, sass/components/content/_posts-and-pages.scss */
   #page .talleres_descripcion h2, #page .talleres_descripcion h3, #page .talleres_descripcion h4, #page .talleres_descripcion h5 {
     font-size: 29px;
     font-weight: 300; }
-  /* line 62, sass/components/content/_posts-and-pages.scss */
+  /* line 64, sass/components/content/_posts-and-pages.scss */
   #page .talleres_descripcion p {
     margin: 0;
     font-size: 16px; }
-/* line 67, sass/components/content/_posts-and-pages.scss */
+/* line 69, sass/components/content/_posts-and-pages.scss */
 #page .talleres-posts {
   max-width: 1140px;
   padding: 50px 0;
   font-family: 'Inter', sans-serif; }
-  /* line 71, sass/components/content/_posts-and-pages.scss */
+  /* line 73, sass/components/content/_posts-and-pages.scss */
   #page .talleres-posts .taller-post-item {
     width: 33%;
     padding: 10px; }
-    /* line 74, sass/components/content/_posts-and-pages.scss */
+    /* line 76, sass/components/content/_posts-and-pages.scss */
     #page .talleres-posts .taller-post-item article {
       border-radius: 8px 8px 8px 8px;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
       min-height: 480px; }
-      /* line 78, sass/components/content/_posts-and-pages.scss */
+      /* line 80, sass/components/content/_posts-and-pages.scss */
       #page .talleres-posts .taller-post-item article a {
         text-decoration: none;
         color: #55595c; }
-        /* line 81, sass/components/content/_posts-and-pages.scss */
+        /* line 83, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a:hover {
           text-decoration: none; }
-        /* line 85, sass/components/content/_posts-and-pages.scss */
-        #page .talleres-posts .taller-post-item article a .post-thumbnail img {
-          border-top-left-radius: 8px;
-          border-top-right-radius: 8px;
-          min-height: 200px;
-          object-fit: cover;
-          object-position: center;
-          transition: transform .2s; }
-          /* line 92, sass/components/content/_posts-and-pages.scss */
-          #page .talleres-posts .taller-post-item article a .post-thumbnail img:hover {
-            transform: scale(1.05); }
-        /* line 97, sass/components/content/_posts-and-pages.scss */
+        /* line 86, sass/components/content/_posts-and-pages.scss */
+        #page .talleres-posts .taller-post-item article a .post-thumbnail {
+          overflow: hidden; }
+          /* line 88, sass/components/content/_posts-and-pages.scss */
+          #page .talleres-posts .taller-post-item article a .post-thumbnail img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            min-height: 200px;
+            object-fit: cover;
+            object-position: center;
+            transition: transform .6s; }
+            /* line 95, sass/components/content/_posts-and-pages.scss */
+            #page .talleres-posts .taller-post-item article a .post-thumbnail img:hover {
+              transform: scale(1.2); }
+        /* line 100, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a .make-zoom {
           position: absolute;
           top: -9999em;
           left: -9999em; }
-      /* line 103, sass/components/content/_posts-and-pages.scss */
+      /* line 106, sass/components/content/_posts-and-pages.scss */
       #page .talleres-posts .taller-post-item article .taller-article-content {
         padding: 28px;
         font-size: 16px;
         text-decoration: none;
         color: #55595c; }
-        /* line 108, sass/components/content/_posts-and-pages.scss */
+        /* line 111, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content:hover {
           text-decoration: none; }
-        /* line 111, sass/components/content/_posts-and-pages.scss */
+        /* line 114, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content h3, #page .talleres-posts .taller-post-item article .taller-article-content h2, #page .talleres-posts .taller-post-item article .taller-article-content div, #page .talleres-posts .taller-post-item article .taller-article-content span {
           margin-bottom: 15px;
           font-weight: 600; }
-        /* line 115, sass/components/content/_posts-and-pages.scss */
+        /* line 118, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content h3, #page .talleres-posts .taller-post-item article .taller-article-content h2 {
           font-size: 16px;
           font-weight: 700; }
-        /* line 119, sass/components/content/_posts-and-pages.scss */
+        /* line 122, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content div {
           font-weight: 400; }
-        /* line 122, sass/components/content/_posts-and-pages.scss */
+        /* line 125, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content span {
           padding: 12px 24px;
           color: #0286AD;
           border: 2px solid #0286AD;
           border-radius: 3px; }
-/* line 133, sass/components/content/_posts-and-pages.scss */
+/* line 136, sass/components/content/_posts-and-pages.scss */
 #page .taller-single-post {
   padding: 20px;
   padding-bottom: 50px; }
   @media (max-width: 768px) {
-    /* line 133, sass/components/content/_posts-and-pages.scss */
+    /* line 136, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post {
       padding-bottom: 20px; }
-      /* line 138, sass/components/content/_posts-and-pages.scss */
+      /* line 141, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post:first-child {
         padding-top: 30px; } }
   @media (max-width: 768px) {
-    /* line 142, sass/components/content/_posts-and-pages.scss */
+    /* line 145, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post:first-child {
       padding-top: 50px; } }
-  /* line 147, sass/components/content/_posts-and-pages.scss */
+  /* line 150, sass/components/content/_posts-and-pages.scss */
   #page .taller-single-post article {
     max-width: 1140px;
     background-color: #fff;
@@ -846,14 +853,14 @@ textarea {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     font-family: 'Inter', sans-serif; }
     @media (max-width: 768px) {
-      /* line 147, sass/components/content/_posts-and-pages.scss */
+      /* line 150, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article {
         margin-left: 11px !important;
         margin-right: 11px !important;
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important; } }
-    /* line 162, sass/components/content/_posts-and-pages.scss */
+    /* line 165, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .post-thumbnail img {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -862,33 +869,33 @@ textarea {
       object-position: center;
       width: 100%;
       max-height: 150px; }
-    /* line 172, sass/components/content/_posts-and-pages.scss */
+    /* line 175, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article h3, #page .taller-single-post article h2, #page .taller-single-post article h4, #page .taller-single-post article h5, #page .taller-single-post article h6 {
       padding: 30px;
       margin: 0;
       color: #55595c;
       font-size: 20px;
       font-weight: 700; }
-    /* line 179, sass/components/content/_posts-and-pages.scss */
+    /* line 182, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .single-taller-description {
       padding-bottom: 30px;
       color: #55595c;
       font-size: 20px;
       font-weight: 400; }
-    /* line 185, sass/components/content/_posts-and-pages.scss */
+    /* line 188, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .single-taller-especialista {
       margin-bottom: 20px; }
-      /* line 187, sass/components/content/_posts-and-pages.scss */
+      /* line 190, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .single-taller-especialista img {
         object-fit: cover;
         object-position: center;
         width: 71px;
         height: 71px; }
-      /* line 193, sass/components/content/_posts-and-pages.scss */
+      /* line 196, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .single-taller-especialista .nombre-especialidad {
         flex-wrap: wrap;
         padding-left: 15px; }
-        /* line 196, sass/components/content/_posts-and-pages.scss */
+        /* line 199, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .single-taller-especialista .nombre-especialidad span {
           color: #54595f;
           font-size: 14px;
@@ -896,7 +903,7 @@ textarea {
           font-weight: 400;
           font-family: 'Roboto Slab', serif;
           font-size: 14px; }
-        /* line 204, sass/components/content/_posts-and-pages.scss */
+        /* line 207, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .single-taller-especialista .nombre-especialidad span:first-child {
           color: #0286AD;
           font-size: 22px;
@@ -904,7 +911,7 @@ textarea {
           align-items: flex-end;
           font-family: 'Roboto', sans-serif;
           font-size: 22px; }
-    /* line 214, sass/components/content/_posts-and-pages.scss */
+    /* line 217, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .title-taller-description {
       color: #0286AD;
       padding: 15px 20px;
@@ -914,73 +921,87 @@ textarea {
       border: solid 1px #88888836;
       cursor: pointer;
       font-family: 'Roboto', sans-serif; }
-      /* line 223, sass/components/content/_posts-and-pages.scss */
+      /* line 226, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .title-taller-description div {
         margin-left: 10px; }
-    /* line 227, sass/components/content/_posts-and-pages.scss */
-    #page .taller-single-post article .content-taller-description {
-      color: #7a7a7a;
-      font-size: 15px;
-      font-weight: 300;
-      font-family: 'Inter', sans-serif;
-      opacity: 0;
-      transition: visibility 0.5s linear, opacity 500ms linear;
-      border: solid 1px #88888836;
-      border-top: none;
-      padding: 10px 25px;
-      /*display:none;*/ }
-    /* line 239, sass/components/content/_posts-and-pages.scss */
+      /* line 229, sass/components/content/_posts-and-pages.scss */
+      #page .taller-single-post article .title-taller-description .minus-sign {
+        left: -6px; }
+    /* line 233, sass/components/content/_posts-and-pages.scss */
+    #page .taller-single-post article .parent-container-taller-description {
+      position: relative; }
+      /* line 235, sass/components/content/_posts-and-pages.scss */
+      #page .taller-single-post article .parent-container-taller-description .content-taller-description {
+        color: #7a7a7a;
+        font-size: 15px;
+        font-weight: 300;
+        font-family: 'Inter', sans-serif;
+        /*opacity:0;*/
+        /*transition: visibility 500ms linear, opacity 500ms linear;*/
+        /*transition: visibility 0.5s linear, top 300ms linear;*/
+        transition: top 300ms ease 0s;
+        border: solid 1px #88888836;
+        border-top: none;
+        padding: 10px 25px;
+        position: relative;
+        top: 0;
+        line-height: 1.6; }
+      /* line 251, sass/components/content/_posts-and-pages.scss */
+      #page .taller-single-post article .parent-container-taller-description .positioning {
+        position: absolute;
+        top: -80px; }
+    /* line 256, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .opacidad1 {
       opacity: 1; }
-    /* line 242, sass/components/content/_posts-and-pages.scss */
+    /* line 259, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .cerrado {
       color: #89A0FF; }
-    /* line 245, sass/components/content/_posts-and-pages.scss */
+    /* line 262, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .video-diapo {
       margin-top: 20px;
       font-size: 16px;
       font-family: 'Inter', sans-serif;
       /*flex-wrap: wrap;*/ }
       @media (max-width: 690px) {
-        /* line 245, sass/components/content/_posts-and-pages.scss */
+        /* line 262, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo {
           width: 100% !important;
           display: block !important; } }
-      /* line 254, sass/components/content/_posts-and-pages.scss */
+      /* line 271, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo div {
         background-color: #EDEDED;
         color: #012D3A;
         border-radius: 6px 6px 6px 6px;
         padding: 16px 24px;
         margin: 15px; }
-        /* line 260, sass/components/content/_posts-and-pages.scss */
+        /* line 277, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div:hover {
           background-color: #29CBFC;
           color: #FFFFFF;
           cursor: pointer; }
         @media (max-width: 690px) {
-          /* line 254, sass/components/content/_posts-and-pages.scss */
+          /* line 271, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div {
             width: 100% !important;
             margin-left: 0;
             margin-right: 0; } }
-        /* line 270, sass/components/content/_posts-and-pages.scss */
+        /* line 287, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div a {
           color: #012D3A;
           text-decoration: none; }
-          /* line 273, sass/components/content/_posts-and-pages.scss */
+          /* line 290, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div a:hover {
             text-decoration: none; }
-      /* line 278, sass/components/content/_posts-and-pages.scss */
+      /* line 295, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo .active {
         background-color: #0286AD;
         position: relative;
         color: #fff; }
-        /* line 282, sass/components/content/_posts-and-pages.scss */
+        /* line 299, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:hover {
           background-color: #0286AD;
           color: #fff; }
-        /* line 286, sass/components/content/_posts-and-pages.scss */
+        /* line 303, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:after {
           content: "";
           position: absolute;
@@ -991,22 +1012,22 @@ textarea {
           height: 18px;
           background-color: #0286AD;
           transform: rotate(45deg); }
-        /* line 297, sass/components/content/_posts-and-pages.scss */
+        /* line 314, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active a {
           color: #fff; }
-    /* line 302, sass/components/content/_posts-and-pages.scss */
+    /* line 319, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .presentation-container {
       min-height: 400px;
       width: 100%;
       position: relative;
       display: block; }
-      /* line 307, sass/components/content/_posts-and-pages.scss */
+      /* line 324, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .presentation-container .t-video, #page .taller-single-post article .presentation-container .t-presentation {
         min-height: 400px;
         width: 100%;
         position: relative;
         display: block; }
-        /* line 312, sass/components/content/_posts-and-pages.scss */
+        /* line 329, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .presentation-container .t-video .t-video iframe, #page .taller-single-post article .presentation-container .t-video .t-presentation iframe, #page .taller-single-post article .presentation-container .t-presentation .t-video iframe, #page .taller-single-post article .presentation-container .t-presentation .t-presentation iframe {
           width: 100%;
           height: 400px;
