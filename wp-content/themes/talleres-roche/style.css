@@ -716,6 +716,7 @@ textarea {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
 /* line 26, sass/components/content/_posts-and-pages.scss */
 #page .entry-header-talleres {
   min-height: 250px;
@@ -1509,7 +1510,6 @@ body.home main#primary article {
     font-weight: 200;
     letter-spacing: 0.5px;
     text-align: center;
-    margin-top: 75px;
-    margin-bottom: 90px; }
+    margin-top: 75px; }
 
 /*# sourceMappingURL=style.css.map */
