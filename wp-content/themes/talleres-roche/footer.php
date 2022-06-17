@@ -12,19 +12,49 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'roche' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'roche' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'roche' ), 'roche', '<a href="http://underscores.me/">R&R</a>' );
-				?>
-		</div><!-- .site-info -->
+        <div class="container">
+            <div class="seccion1">
+                <div class="logo-escuela">
+                    <?php if( get_field('logo_escuelas', 'option') ): ?>
+                        <img src="<?php the_field('logo_escuelas', 'option'); ?>" />
+                    <?php endif; ?>
+                </div>
+                <div class="seccion1a">
+                    <div class="logo-footer">
+                        <?php the_custom_logo(); ?>
+                    </div>
+                    <div class="direccion">
+                        <?php the_field('direccion', 'option'); ?>
+                    </div>
+                </div>
+            </div>
+            <hr class="separador">
+            <div class="site-info">
+                <div class="creditos">
+                    <?php the_field('creditos', 'option'); ?>
+                </div>
+                <div class="politicas">
+                    <?php if( have_rows('politicas', 'option') ): ?>
+                        <ul class="slides">
+                            <?php while( have_rows('politicas', 'option') ): the_row();
+                                ?>
+                                <li>
+                                    <?php
+                                    $link = get_sub_field('link', 'option');
+                                    if( $link ):
+                                        $link_url = $link['url'];
+                                        $link_title = $link['title'];
+                                        $link_target = $link['target'] ? $link['target'] : '_self';
+                                        ?>
+                                        <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+                                    <?php endif; ?>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    <?php endif; ?>
+                </div>
+            </div><!-- .site-info -->
+        </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

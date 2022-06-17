@@ -1224,4 +1224,313 @@ header.site-header {
   margin-right: auto;
   margin-bottom: 1.5em; }
 
+/* Header
+--------------------------------------------- */
+/* line 1, sass/partials/_header.scss */
+header#masthead {
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #D1DBE9 0%, #FFFFFF 71%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
+  /* line 8, sass/partials/_header.scss */
+  header#masthead .container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center; }
+    /* line 12, sass/partials/_header.scss */
+    header#masthead .container .site-branding {
+      text-align: center; }
+      /* line 14, sass/partials/_header.scss */
+      header#masthead .container .site-branding p.site-description, header#masthead .container .site-branding p.site-title {
+        display: none; }
+      /* line 18, sass/partials/_header.scss */
+      header#masthead .container .site-branding a img {
+        width: 65%; }
+    /* line 26, sass/partials/_header.scss */
+    header#masthead .container nav#site-navigation ul#primary-menu li a {
+      color: #025974;
+      fill: #025974;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      font-family: "Varela Round", Sans-serif;
+      font-size: 15px;
+      font-weight: 300; }
+      /* line 36, sass/partials/_header.scss */
+      header#masthead .container nav#site-navigation ul#primary-menu li a:after {
+        content: "";
+        bottom: 0;
+        left: 0;
+        height: 3px;
+        background-color: transparent;
+        position: absolute;
+        width: 100%; }
+    /* line 48, sass/partials/_header.scss */
+    header#masthead .container nav#site-navigation ul#primary-menu li.current-menu-item a {
+      color: #89A0FF; }
+      /* line 50, sass/partials/_header.scss */
+      header#masthead .container nav#site-navigation ul#primary-menu li.current-menu-item a:after {
+        background-color: #89A0FF; }
+
+/* Footer
+--------------------------------------------- */
+/* line 1, sass/partials/_footer.scss */
+footer#colophon {
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 5px; }
+  /* line 5, sass/partials/_footer.scss */
+  footer#colophon .seccion1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 40px; }
+    /* line 12, sass/partials/_footer.scss */
+    footer#colophon .seccion1 .seccion1a .logo-footer {
+      text-align: center; }
+      /* line 15, sass/partials/_footer.scss */
+      footer#colophon .seccion1 .seccion1a .logo-footer a img {
+        width: 60%;
+        margin-bottom: 25px; }
+    /* line 22, sass/partials/_footer.scss */
+    footer#colophon .seccion1 .seccion1a .direccion p {
+      font-family: "Roboto", Sans-serif;
+      font-weight: 400;
+      text-align: center;
+      color: #7a7a7a;
+      font-size: 13px; }
+  /* line 34, sass/partials/_footer.scss */
+  footer#colophon .site-info .creditos p {
+    font-family: "Roboto", Sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    text-align: center;
+    color: #7a7a7a; }
+  /* line 43, sass/partials/_footer.scss */
+  footer#colophon .site-info .politicas .slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0; }
+    /* line 51, sass/partials/_footer.scss */
+    footer#colophon .site-info .politicas .slides li a {
+      color: #16181a;
+      font-family: "Roboto", Sans-serif;
+      font-size: 9px;
+      font-weight: 300;
+      text-decoration: none;
+      margin: 10px; }
+      /* line 58, sass/partials/_footer.scss */
+      footer#colophon .site-info .politicas .slides li a:hover {
+        color: #7963e0; }
+
+/* Custom
+--------------------------------------------- */
+/* line 1, sass/partials/_custom.scss */
+body {
+  margin-bottom: 0 !important; }
+  /* line 3, sass/partials/_custom.scss */
+  body main#primary {
+    margin-top: 90px; }
+
+/* Home
+--------------------------------------------- */
+/* line 3, sass/partials/_home.scss */
+body.home main#primary article {
+  margin-bottom: 0; }
+  /* line 6, sass/partials/_home.scss */
+  body.home main#primary article .entry-content section.hero {
+    height: 85vh;
+    background-position: center !important;
+    /* Center the image */
+    background-repeat: no-repeat !important;
+    /* Do not repeat the image */
+    background-size: cover !important;
+    /* Resize the background image to cover the entire container */
+    display: grid;
+    align-items: center; }
+    /* line 13, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.hero .container {
+      display: grid;
+      grid-template-columns: 50% 50%; }
+      /* line 17, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.hero .container .hero-left h2 {
+        color: #FFFFFF;
+        font-family: "Inter", Sans-serif;
+        font-size: 59px;
+        font-weight: 500;
+        text-transform: none;
+        line-height: 1.3em;
+        text-shadow: 3px 3px 9px #8eb2d3; }
+      /* line 26, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.hero .container .hero-left h5 {
+        color: white;
+        font-weight: normal;
+        line-height: 1.3;
+        font-family: "Inter", Sans-serif;
+        font-weight: 600;
+        font-size: 1.313rem;
+        margin-bottom: 50px; }
+      /* line 35, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.hero .container .hero-left a {
+        background-color: #0286AD;
+        border-radius: 6px 6px 6px 6px;
+        padding: 20px 24px 20px 24px;
+        font-family: "Inter", Sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        line-height: 28px;
+        color: white;
+        text-decoration: none; }
+        /* line 46, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.hero .container .hero-left a span.elementor-button-icon.elementor-align-icon-right {
+          position: relative;
+          left: 5px;
+          top: 1px; }
+        /* line 51, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.hero .container .hero-left a:hover {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+          background-color: #29CBFC; }
+  /* line 61, sass/partials/_home.scss */
+  body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    text-align: center; }
+    /* line 68, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a {
+      text-align: center; }
+      /* line 70, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a img {
+        width: 50%; }
+    /* line 75, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b h2 {
+      color: #026F90;
+      font-family: "Roboto", Sans-serif;
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      line-height: 1; }
+    /* line 84, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b p {
+      color: #7a7a7a;
+      font-family: "Roboto", Sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      font-size: 16px;
+      margin-bottom: 45px; }
+    /* line 92, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a {
+      background-color: #0286AD;
+      border-radius: 6px 6px 6px 6px;
+      padding: 20px 24px 20px 24px;
+      font-family: "Inter", Sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 28px;
+      color: white;
+      text-decoration: none; }
+      /* line 103, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a span.elementor-button-icon.elementor-align-icon-right {
+        position: relative;
+        left: 5px;
+        top: 1px; }
+      /* line 108, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: #29CBFC; }
+  /* line 116, sass/partials/_home.scss */
+  body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 {
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    /* line 119, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0; }
+      /* line 126, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
+        text-align: center; }
+        /* line 128, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li img {
+          margin-bottom: 20px; }
+        /* line 131, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li h5 {
+          color: #0286AD;
+          font-family: "Inter", Sans-serif;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 1.3em;
+          margin-bottom: 20px; }
+        /* line 139, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li p {
+          color: #7a7a7a;
+          font-family: "Roboto", Sans-serif;
+          font-weight: 300;
+          letter-spacing: 0.4px;
+          font-size: 16px;
+          max-width: 80%;
+          margin: 0 auto; }
+  /* line 152, sass/partials/_home.scss */
+  body.home main#primary article .entry-content section.imagen-fondo {
+    background-position: center !important;
+    /* Center the image */
+    background-repeat: no-repeat !important;
+    /* Do not repeat the image */
+    background-size: cover !important;
+    /* Resize the background image to cover the entire container */
+    height: 500px; }
+  /* line 158, sass/partials/_home.scss */
+  body.home main#primary article .entry-content section.roche {
+    background-position: center !important;
+    /* Center the image */
+    background-repeat: no-repeat !important;
+    /* Do not repeat the image */
+    background-size: cover !important;
+    /* Resize the background image to cover the entire container */
+    padding-top: 75px;
+    padding-bottom: 90px; }
+    /* line 164, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.roche h2 {
+      color: #FFFFFF;
+      font-family: "Inter", Sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 1.3em;
+      text-align: center; }
+    /* line 172, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section.roche p {
+      text-align: center;
+      color: #FFFFFF;
+      font-family: "Inter", Sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      max-width: 65%;
+      margin: 0 auto; }
+  /* line 183, sass/partials/_home.scss */
+  body.home main#primary article .entry-content section.talleres-realizados h2 {
+    color: #026F90;
+    font-family: "Inter", Sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 75px; }
+
 /*# sourceMappingURL=style.css.map */
