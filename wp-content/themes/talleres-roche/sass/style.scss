@@ -100,3 +100,18 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /* Alignments
 --------------------------------------------- */
 @import "utilities/alignments";
+/* Header
+--------------------------------------------- */
+@import "partials/header";
+
+/* Footer
+--------------------------------------------- */
+@import "partials/footer";
+
+/* Custom
+--------------------------------------------- */
+@import "partials/custom";
+
+/* Home
+--------------------------------------------- */
+@import "partials/home";
