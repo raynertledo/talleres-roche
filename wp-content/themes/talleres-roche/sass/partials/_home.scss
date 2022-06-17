@@ -1,0 +1,194 @@
+body.home{
+  main#primary {
+    article{
+      margin-bottom: 0;
+      .entry-content {
+        section.hero {
+          height: 85vh;
+          background-position: center !important; /* Center the image */
+          background-repeat: no-repeat !important; /* Do not repeat the image */
+          background-size: cover !important; /* Resize the background image to cover the entire container */
+          display: grid;
+          align-items: center;
+          .container{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .hero-left{
+              h2{
+                color: #FFFFFF;
+                font-family: "Inter", Sans-serif;
+                font-size: 59px;
+                font-weight: 500;
+                text-transform: none;
+                line-height: 1.3em;
+                text-shadow: 3px 3px 9px rgba(142, 178, 211, 39%);
+              }
+              h5{
+                color: rgb(255, 255, 255);
+                font-weight: normal;
+                line-height: 1.3;
+                font-family: "Inter", Sans-serif;
+                font-weight: 600;
+                font-size: 1.313rem;
+                margin-bottom: 50px;
+              }
+              a{
+                background-color: #0286AD;
+                border-radius: 6px 6px 6px 6px;
+                padding: 20px 24px 20px 24px;
+                font-family: "Inter", Sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                line-height: 28px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                span.elementor-button-icon.elementor-align-icon-right {
+                  position: relative;
+                  left: 5px;
+                  top: 1px;
+                }
+                &:hover{
+                  -webkit-transform: scale(1.1);
+                  transform: scale(1.1);
+                  background-color: #29CBFC;
+                }
+              }
+            }
+          }
+        }
+        section.seccion-experiencia{
+          .seccion-experiencia1{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 60px;
+            text-align: center;
+            .seccion-experiencia1a{
+              text-align: center;
+              img{
+                width: 50%;
+              }
+            }
+            .seccion-experiencia1b{
+              h2{
+                color: #026F90;
+                font-family: "Roboto", Sans-serif;
+                font-size: 22px;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                margin-bottom: 20px;
+                line-height: 1;
+              }
+              p{
+                color: #7a7a7a;
+                font-family: "Roboto", Sans-serif;
+                font-weight: 300;
+                letter-spacing: 0.4px;
+                font-size: 16px;
+                margin-bottom: 45px;
+              }
+              a{
+                background-color: #0286AD;
+                border-radius: 6px 6px 6px 6px;
+                padding: 20px 24px 20px 24px;
+                font-family: "Inter", Sans-serif;
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+                line-height: 28px;
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                span.elementor-button-icon.elementor-align-icon-right {
+                  position: relative;
+                  left: 5px;
+                  top: 1px;
+                }
+                &:hover{
+                  -webkit-transform: scale(1.1);
+                  transform: scale(1.1);
+                  background-color: #29CBFC;
+                }
+              }
+            }
+          }
+          .seccion-experiencia2{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            .slides{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              list-style: none;
+              padding-left: 0;
+              margin-left: 0;
+              li{
+                text-align: center;
+                img{
+                  margin-bottom: 20px;
+                }
+                h5{
+                  color: #0286AD;
+                  font-family: "Inter", Sans-serif;
+                  font-size: 18px;
+                  font-weight: 300;
+                  line-height: 1.3em;
+                  margin-bottom: 20px;
+                }
+                p{
+                  color: #7a7a7a;
+                  font-family: "Roboto", Sans-serif;
+                  font-weight: 300;
+                  letter-spacing: 0.4px;
+                  font-size: 16px;
+                  max-width: 80%;
+                  margin: 0 auto;
+                }
+              }
+            }
+          }
+        }
+        section.imagen-fondo {
+          background-position: center !important; /* Center the image */
+          background-repeat: no-repeat !important; /* Do not repeat the image */
+          background-size: cover !important; /* Resize the background image to cover the entire container */
+          height: 500px;
+        }
+        section.roche {
+          background-position: center !important; /* Center the image */
+          background-repeat: no-repeat !important; /* Do not repeat the image */
+          background-size: cover !important; /* Resize the background image to cover the entire container */
+          padding-top: 75px;
+          padding-bottom: 90px;
+          h2{
+            color: #FFFFFF;
+            font-family: "Inter", Sans-serif;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.3em;
+            text-align: center;
+          }
+          p{
+            text-align: center;
+            color: #FFFFFF;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 65%;
+            margin: 0 auto;
+          }
+        }
+        section.talleres-realizados {
+          h2{
+            color: #026F90;
+            font-family: "Inter", Sans-serif;
+            font-size: 32px;
+            font-weight: 200;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+}
