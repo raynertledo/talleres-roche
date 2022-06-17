@@ -47,7 +47,7 @@ get_header();
 							<article class="">
 								<a href="<?php echo "#".get_the_ID(); ?>">				
 									<?php roche_post_thumbnail(); ?>
-									
+
 									<div class="taller-article-content">
 										<?php the_title( '<h3 class="entry-title text-center">', '</h3>' ); ?>
 										<div class="text-center"><?php echo get_field('taller_subtitulo'); ?></div>
@@ -75,9 +75,14 @@ get_header();
 								</div>
 								<div class="d-flex nombre-especialidad"><span class="w-100 d-flex"><?php echo get_field('taller_nombre_del_especialista'); ?></span><span class="w-100 d-flex"><?php echo get_field('taller_especialidad'); ?></span></div>	
 							</div>
-							<div class="title-taller-description cerrado"><span class="d-block visible description-hidden cerrado">+</span><span class="invisible d-none description-showed">-</span><div class=""><?php _e('Descripción del taller', 'roche'); ?></div></div>
-							<div class="content-taller-description d-none invisible"><?php echo get_field('taller_descripcion'); ?></div>
+
+							<div id="<?php echo 'title-taller-'.get_the_ID(); ?>" class="title-taller-description cerrado"><span class="d-none invisible description-hidden cerrado">+</span><span class="visible d-block description-showed minus-sign">-</span><div class=""><?php _e('Descripción del taller', 'roche'); ?></div></div>
+
+
+							<div class="parent-container-taller-description"><div class="content-taller-description visible content-taller-description <?php echo 'content_taller_description_'.get_the_ID(); ?>"><?php echo get_field('taller_descripcion'); ?></div></div>
 							<!--<div class="content-taller-description"><?php //echo get_field('taller_descripcion'); ?></div>-->
+
+
 							<div class="video-diapo d-flex w-100">
 								<div id="<?php echo 'video_'.get_the_ID(); ?>" class="w-50 text-center taller-video-presentacion video active"><a class="text-center"><?php _e('Grabación del '.get_the_title(), 'roche'); ?></a></div>
 								<div id="<?php echo 'presentacion_'.get_the_ID(); ?>" class="w-50 text-center taller-video-presentacion presentacion"><a class="text-center"><?php _e('Presentación de diapositivas', 'roche'); ?></a></div>
