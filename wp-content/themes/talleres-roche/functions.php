@@ -220,3 +220,25 @@ if( function_exists('acf_add_options_page') ):
     ));
 
 endif;
+
+add_filter( 'comment_form_defaults', 'dcms_modify_fields_form' );
+
+function dcms_modify_fields_form( $args ){
+
+	$commenter = wp_get_current_commenter();
+	$req = get_option( 'require_name_email' );
+	$aria_req = ( $req ? " aria-required='true'" : '' );
+
+	$author = '<div class="taller-comments-form"><input placeholder="'.__( 'Name' ) . ( $req ? ' *' : '' ).'" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .'" size="30"' . $aria_req . ' />';
+	$email = '<input placeholder="'.__( 'Email' ) . ( $req ? ' *' : '' ).'" id="email" name="email" type="text" value="' . esc_attr( $commenter['comment_author_email'] ) .'" size="30"' . $aria_req . ' />';
+	$url = '<input placeholder="'.__( 'Website' ).'" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .'" size="30" /></div>';
+	$comment = '<textarea placeholder="'. _x( 'Comment', 'noun' ).'" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>';
+
+	$args['fields']['author'] = $author;
+	$args['fields']['email'] = $email;
+	$args['fields']['url'] = $url;
+	$args['comment_field'] = $comment;
+
+	return $args;
+
+}
