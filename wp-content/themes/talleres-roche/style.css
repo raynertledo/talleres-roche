@@ -776,18 +776,19 @@ header.site-header {
     #page .talleres-posts .taller-post-item article {
       border-radius: 8px 8px 8px 8px;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-      min-height: 480px; }
-      /* line 80, sass/components/content/_posts-and-pages.scss */
+      min-height: 480px;
+      position: relative; }
+      /* line 81, sass/components/content/_posts-and-pages.scss */
       #page .talleres-posts .taller-post-item article a {
         text-decoration: none;
         color: #55595c; }
-        /* line 83, sass/components/content/_posts-and-pages.scss */
+        /* line 84, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a:hover {
           text-decoration: none; }
-        /* line 86, sass/components/content/_posts-and-pages.scss */
+        /* line 87, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a .post-thumbnail {
           overflow: hidden; }
-          /* line 88, sass/components/content/_posts-and-pages.scss */
+          /* line 89, sass/components/content/_posts-and-pages.scss */
           #page .talleres-posts .taller-post-item article a .post-thumbnail img {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -795,56 +796,87 @@ header.site-header {
             object-fit: cover;
             object-position: center;
             transition: transform .6s; }
-            /* line 95, sass/components/content/_posts-and-pages.scss */
+            /* line 96, sass/components/content/_posts-and-pages.scss */
             #page .talleres-posts .taller-post-item article a .post-thumbnail img:hover {
               transform: scale(1.2); }
-        /* line 100, sass/components/content/_posts-and-pages.scss */
+        /* line 101, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a .make-zoom {
           position: absolute;
           top: -9999em;
           left: -9999em; }
-      /* line 106, sass/components/content/_posts-and-pages.scss */
+      /* line 107, sass/components/content/_posts-and-pages.scss */
       #page .talleres-posts .taller-post-item article .taller-article-content {
-        padding: 28px;
+        padding: 20px;
         font-size: 16px;
         text-decoration: none;
-        color: #55595c; }
-        /* line 111, sass/components/content/_posts-and-pages.scss */
+        color: #55595c;
+        height: 300px;
+        position: relative; }
+        @media (max-width: 890px) {
+          /* line 107, sass/components/content/_posts-and-pages.scss */
+          #page .talleres-posts .taller-post-item article .taller-article-content {
+            height: 330px; } }
+        @media (max-width: 768px) {
+          /* line 107, sass/components/content/_posts-and-pages.scss */
+          #page .talleres-posts .taller-post-item article .taller-article-content {
+            height: 280px; } }
+        @media (max-width: 350px) {
+          /* line 107, sass/components/content/_posts-and-pages.scss */
+          #page .talleres-posts .taller-post-item article .taller-article-content {
+            height: 300px; } }
+        /* line 124, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content:hover {
           text-decoration: none; }
-        /* line 114, sass/components/content/_posts-and-pages.scss */
+        /* line 127, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content h3, #page .talleres-posts .taller-post-item article .taller-article-content h2, #page .talleres-posts .taller-post-item article .taller-article-content div, #page .talleres-posts .taller-post-item article .taller-article-content span {
           margin-bottom: 15px;
           font-weight: 600; }
-        /* line 118, sass/components/content/_posts-and-pages.scss */
+        /* line 131, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content h3, #page .talleres-posts .taller-post-item article .taller-article-content h2 {
           font-size: 16px;
           font-weight: 700; }
-        /* line 122, sass/components/content/_posts-and-pages.scss */
+        /* line 135, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content div {
           font-weight: 400; }
-        /* line 125, sass/components/content/_posts-and-pages.scss */
+        /* line 138, sass/components/content/_posts-and-pages.scss */
+        #page .talleres-posts .taller-post-item article .taller-article-content .taller_subtitulo {
+          /*height: 80px;*/ }
+        /* line 141, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content span {
-          padding: 12px 24px;
+          padding: 12px 18px;
           color: #0286AD;
           border: 2px solid #0286AD;
-          border-radius: 3px; }
-/* line 136, sass/components/content/_posts-and-pages.scss */
+          border-radius: 3px;
+          margin-top: 35px;
+          position: relative;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 160px;
+          width: 160px;
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          margin-left: -80px; }
+        /* line 158, sass/components/content/_posts-and-pages.scss */
+        #page .talleres-posts .taller-post-item article .taller-article-content p {
+          margin-bottom: 15px; }
+/* line 165, sass/components/content/_posts-and-pages.scss */
 #page .taller-single-post {
   padding: 20px;
   padding-bottom: 50px; }
   @media (max-width: 768px) {
-    /* line 136, sass/components/content/_posts-and-pages.scss */
+    /* line 165, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post {
       padding-bottom: 20px; }
-      /* line 141, sass/components/content/_posts-and-pages.scss */
+      /* line 170, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post:first-child {
         padding-top: 30px; } }
   @media (max-width: 768px) {
-    /* line 145, sass/components/content/_posts-and-pages.scss */
+    /* line 174, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post:first-child {
       padding-top: 50px; } }
-  /* line 150, sass/components/content/_posts-and-pages.scss */
+  /* line 179, sass/components/content/_posts-and-pages.scss */
   #page .taller-single-post article {
     max-width: 1140px;
     background-color: #fff;
@@ -853,14 +885,14 @@ header.site-header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     font-family: 'Inter', sans-serif; }
     @media (max-width: 768px) {
-      /* line 150, sass/components/content/_posts-and-pages.scss */
+      /* line 179, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article {
         margin-left: 11px !important;
         margin-right: 11px !important;
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important; } }
-    /* line 165, sass/components/content/_posts-and-pages.scss */
+    /* line 194, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .post-thumbnail img {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -869,49 +901,62 @@ header.site-header {
       object-position: center;
       width: 100%;
       max-height: 150px; }
-    /* line 175, sass/components/content/_posts-and-pages.scss */
+    /* line 204, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article h3, #page .taller-single-post article h2, #page .taller-single-post article h4, #page .taller-single-post article h5, #page .taller-single-post article h6 {
       padding: 30px;
+      padding-bottom: 15px;
       margin: 0;
       color: #55595c;
       font-size: 20px;
       font-weight: 700; }
-    /* line 182, sass/components/content/_posts-and-pages.scss */
+    /* line 212, sass/components/content/_posts-and-pages.scss */
+    #page .taller-single-post article .fecha-taller {
+      color: #55595c;
+      font-size: 20px;
+      font-weight: 400; }
+    /* line 217, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .single-taller-description {
       padding-bottom: 30px;
       color: #55595c;
       font-size: 20px;
       font-weight: 400; }
-    /* line 188, sass/components/content/_posts-and-pages.scss */
-    #page .taller-single-post article .single-taller-especialista {
-      margin-bottom: 20px; }
-      /* line 190, sass/components/content/_posts-and-pages.scss */
-      #page .taller-single-post article .single-taller-especialista img {
-        object-fit: cover;
-        object-position: center;
-        width: 71px;
-        height: 71px; }
-      /* line 196, sass/components/content/_posts-and-pages.scss */
-      #page .taller-single-post article .single-taller-especialista .nombre-especialidad {
-        flex-wrap: wrap;
-        padding-left: 15px; }
-        /* line 199, sass/components/content/_posts-and-pages.scss */
-        #page .taller-single-post article .single-taller-especialista .nombre-especialidad span {
-          color: #54595f;
-          font-size: 14px;
-          align-items: flex-start;
-          font-weight: 400;
-          font-family: 'Roboto Slab', serif;
-          font-size: 14px; }
-        /* line 207, sass/components/content/_posts-and-pages.scss */
-        #page .taller-single-post article .single-taller-especialista .nombre-especialidad span:first-child {
-          color: #0286AD;
-          font-size: 22px;
-          font-weight: 700;
-          align-items: flex-end;
-          font-family: 'Roboto', sans-serif;
-          font-size: 22px; }
-    /* line 217, sass/components/content/_posts-and-pages.scss */
+      /* line 222, sass/components/content/_posts-and-pages.scss */
+      #page .taller-single-post article .single-taller-description p {
+        margin: 0;
+        line-height: 1.6; }
+    /* line 227, sass/components/content/_posts-and-pages.scss */
+    #page .taller-single-post article .especialistas-container {
+      flex-wrap: wrap; }
+      /* line 229, sass/components/content/_posts-and-pages.scss */
+      #page .taller-single-post article .especialistas-container .single-taller-especialista {
+        margin-bottom: 20px; }
+        /* line 231, sass/components/content/_posts-and-pages.scss */
+        #page .taller-single-post article .especialistas-container .single-taller-especialista img {
+          object-fit: cover;
+          object-position: center;
+          width: 71px;
+          height: 71px; }
+        /* line 237, sass/components/content/_posts-and-pages.scss */
+        #page .taller-single-post article .especialistas-container .single-taller-especialista .nombre-especialidad {
+          flex-wrap: wrap;
+          padding-left: 15px; }
+          /* line 240, sass/components/content/_posts-and-pages.scss */
+          #page .taller-single-post article .especialistas-container .single-taller-especialista .nombre-especialidad span {
+            color: #54595f;
+            font-size: 14px;
+            align-items: flex-start;
+            font-weight: 400;
+            font-family: 'Roboto Slab', serif;
+            font-size: 14px; }
+          /* line 248, sass/components/content/_posts-and-pages.scss */
+          #page .taller-single-post article .especialistas-container .single-taller-especialista .nombre-especialidad span:first-child {
+            color: #0286AD;
+            font-size: 22px;
+            font-weight: 700;
+            align-items: flex-end;
+            font-family: 'Roboto', sans-serif;
+            font-size: 22px; }
+    /* line 260, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .title-taller-description {
       color: #0286AD;
       padding: 15px 20px;
@@ -921,16 +966,16 @@ header.site-header {
       border: solid 1px #88888836;
       cursor: pointer;
       font-family: 'Roboto', sans-serif; }
-      /* line 226, sass/components/content/_posts-and-pages.scss */
+      /* line 269, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .title-taller-description div {
         margin-left: 10px; }
-      /* line 229, sass/components/content/_posts-and-pages.scss */
+      /* line 272, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .title-taller-description .minus-sign {
         left: -6px; }
-    /* line 233, sass/components/content/_posts-and-pages.scss */
+    /* line 276, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .parent-container-taller-description {
       position: relative; }
-      /* line 235, sass/components/content/_posts-and-pages.scss */
+      /* line 278, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .parent-container-taller-description .content-taller-description {
         color: #7a7a7a;
         font-size: 15px;
@@ -946,62 +991,62 @@ header.site-header {
         position: relative;
         top: 0;
         line-height: 1.6; }
-      /* line 251, sass/components/content/_posts-and-pages.scss */
+      /* line 294, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .parent-container-taller-description .positioning {
         position: absolute;
         top: -80px; }
-    /* line 256, sass/components/content/_posts-and-pages.scss */
+    /* line 299, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .opacidad1 {
       opacity: 1; }
-    /* line 259, sass/components/content/_posts-and-pages.scss */
+    /* line 302, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .cerrado {
       color: #89A0FF; }
-    /* line 262, sass/components/content/_posts-and-pages.scss */
+    /* line 305, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .video-diapo {
       margin-top: 20px;
       font-size: 16px;
       font-family: 'Inter', sans-serif;
       /*flex-wrap: wrap;*/ }
       @media (max-width: 690px) {
-        /* line 262, sass/components/content/_posts-and-pages.scss */
+        /* line 305, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo {
           width: 100% !important;
           display: block !important; } }
-      /* line 271, sass/components/content/_posts-and-pages.scss */
+      /* line 314, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo div {
         background-color: #EDEDED;
         color: #012D3A;
         border-radius: 6px 6px 6px 6px;
         padding: 16px 24px;
         margin: 15px; }
-        /* line 277, sass/components/content/_posts-and-pages.scss */
+        /* line 320, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div:hover {
           background-color: #29CBFC;
           color: #FFFFFF;
           cursor: pointer; }
         @media (max-width: 690px) {
-          /* line 271, sass/components/content/_posts-and-pages.scss */
+          /* line 314, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div {
             width: 100% !important;
             margin-left: 0;
             margin-right: 0; } }
-        /* line 287, sass/components/content/_posts-and-pages.scss */
+        /* line 330, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div a {
           color: #012D3A;
           text-decoration: none; }
-          /* line 290, sass/components/content/_posts-and-pages.scss */
+          /* line 333, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div a:hover {
             text-decoration: none; }
-      /* line 295, sass/components/content/_posts-and-pages.scss */
+      /* line 338, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo .active {
         background-color: #0286AD;
         position: relative;
         color: #fff; }
-        /* line 299, sass/components/content/_posts-and-pages.scss */
+        /* line 342, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:hover {
           background-color: #0286AD;
           color: #fff; }
-        /* line 303, sass/components/content/_posts-and-pages.scss */
+        /* line 346, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:after {
           content: "";
           position: absolute;
@@ -1012,28 +1057,59 @@ header.site-header {
           height: 18px;
           background-color: #0286AD;
           transform: rotate(45deg); }
-        /* line 314, sass/components/content/_posts-and-pages.scss */
+        /* line 357, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active a {
           color: #fff; }
-    /* line 319, sass/components/content/_posts-and-pages.scss */
+    /* line 362, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .presentation-container {
       min-height: 400px;
       width: 100%;
       position: relative;
       display: block; }
-      /* line 324, sass/components/content/_posts-and-pages.scss */
+      /* line 367, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .presentation-container .t-video, #page .taller-single-post article .presentation-container .t-presentation {
         min-height: 400px;
         width: 100%;
         position: relative;
         display: block; }
-        /* line 329, sass/components/content/_posts-and-pages.scss */
+        /* line 372, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .presentation-container .t-video .t-video iframe, #page .taller-single-post article .presentation-container .t-video .t-presentation iframe, #page .taller-single-post article .presentation-container .t-presentation .t-video iframe, #page .taller-single-post article .presentation-container .t-presentation .t-presentation iframe {
           width: 100%;
           height: 400px;
           margin: auto;
           position: relative;
           display: block; }
+
+/* line 385, sass/components/content/_posts-and-pages.scss */
+section.directo-comments {
+  padding: 0 20px 50px 20px; }
+  /* line 387, sass/components/content/_posts-and-pages.scss */
+  section.directo-comments .comments-for-directo {
+    max-width: 1140px;
+    padding: 30px;
+    /*padding-bottom:30px;*/
+    margin: auto;
+    position: relative;
+    display: block;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    color: #55595c; }
+    /* line 400, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo a {
+      color: #0286ad; }
+
+/* line 407, sass/components/content/_posts-and-pages.scss */
+.taller-single-post.page-directo .presentation-container {
+  max-width: 1140px;
+  padding-bottom: 30px;
+  margin: auto;
+  position: relative;
+  display: block;
+  min-height: 300px;
+  height: auto; }
 
 /* Comments
 --------------------------------------------- */
@@ -1354,12 +1430,17 @@ body.home main#primary article {
     background-size: cover !important;
     /* Resize the background image to cover the entire container */
     display: grid;
-    align-items: center; }
-    /* line 13, sass/partials/_home.scss */
+    align-items: center;
+    min-height: 704px; }
+    /* line 14, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.hero .container {
       display: grid;
-      grid-template-columns: 50% 50%; }
-      /* line 17, sass/partials/_home.scss */
+      grid-template-columns: 70% 30%; }
+      @media (max-width: 768px) {
+        /* line 14, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.hero .container {
+          grid-template-columns: 90% 10%; } }
+      /* line 21, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.hero .container .hero-left h2 {
         color: #FFFFFF;
         font-family: "Inter", Sans-serif;
@@ -1367,8 +1448,13 @@ body.home main#primary article {
         font-weight: 500;
         text-transform: none;
         line-height: 1.3em;
+        margin-bottom: 30px;
         text-shadow: 3px 3px 9px #8eb2d3; }
-      /* line 26, sass/partials/_home.scss */
+        @media (max-width: 1024px) {
+          /* line 21, sass/partials/_home.scss */
+          body.home main#primary article .entry-content section.hero .container .hero-left h2 {
+            font-size: 32px; } }
+      /* line 34, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.hero .container .hero-left h5 {
         color: white;
         font-weight: normal;
@@ -1377,7 +1463,11 @@ body.home main#primary article {
         font-weight: 600;
         font-size: 1.313rem;
         margin-bottom: 50px; }
-      /* line 35, sass/partials/_home.scss */
+        @media (max-width: 1024px) {
+          /* line 34, sass/partials/_home.scss */
+          body.home main#primary article .entry-content section.hero .container .hero-left h5 {
+            font-size: 18px; } }
+      /* line 46, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.hero .container .hero-left a {
         background-color: #0286AD;
         border-radius: 6px 6px 6px 6px;
@@ -1389,17 +1479,31 @@ body.home main#primary article {
         line-height: 28px;
         color: white;
         text-decoration: none; }
-        /* line 46, sass/partials/_home.scss */
+        @media (max-width: 766px) {
+          /* line 46, sass/partials/_home.scss */
+          body.home main#primary article .entry-content section.hero .container .hero-left a {
+            width: 100%;
+            display: block;
+            position: relative; } }
+        /* line 62, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.hero .container .hero-left a span.elementor-button-icon.elementor-align-icon-right {
           position: relative;
           left: 5px;
           top: 1px; }
-        /* line 51, sass/partials/_home.scss */
+          @media (max-width: 766px) {
+            /* line 62, sass/partials/_home.scss */
+            body.home main#primary article .entry-content section.hero .container .hero-left a span.elementor-button-icon.elementor-align-icon-right {
+              width: 100%;
+              display: block;
+              top: 20px;
+              left: 92%;
+              position: absolute; } }
+        /* line 74, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.hero .container .hero-left a:hover {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
           background-color: #29CBFC; }
-  /* line 61, sass/partials/_home.scss */
+  /* line 84, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1407,13 +1511,21 @@ body.home main#primary article {
     margin-top: 40px;
     margin-bottom: 60px;
     text-align: center; }
-    /* line 68, sass/partials/_home.scss */
+    @media (max-width: 766px) {
+      /* line 84, sass/partials/_home.scss */
+      body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 {
+        grid-template-columns: 100%; } }
+    /* line 94, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a {
       text-align: center; }
-      /* line 70, sass/partials/_home.scss */
+      @media (max-width: 766px) {
+        /* line 94, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a {
+          padding: 30px 0; } }
+      /* line 99, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a img {
         width: 50%; }
-    /* line 75, sass/partials/_home.scss */
+    /* line 104, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b h2 {
       color: #026F90;
       font-family: "Roboto", Sans-serif;
@@ -1422,7 +1534,7 @@ body.home main#primary article {
       letter-spacing: 0.5px;
       margin-bottom: 20px;
       line-height: 1; }
-    /* line 84, sass/partials/_home.scss */
+    /* line 113, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b p {
       color: #7a7a7a;
       font-family: "Roboto", Sans-serif;
@@ -1430,7 +1542,7 @@ body.home main#primary article {
       letter-spacing: 0.4px;
       font-size: 16px;
       margin-bottom: 45px; }
-    /* line 92, sass/partials/_home.scss */
+    /* line 121, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a {
       background-color: #0286AD;
       border-radius: 6px 6px 6px 6px;
@@ -1442,21 +1554,34 @@ body.home main#primary article {
       line-height: 28px;
       color: white;
       text-decoration: none; }
-      /* line 103, sass/partials/_home.scss */
+      @media (max-width: 766px) {
+        /* line 121, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a {
+          width: 100%;
+          display: block;
+          position: relative; } }
+      /* line 137, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a span.elementor-button-icon.elementor-align-icon-right {
         position: relative;
         left: 5px;
         top: 1px; }
-      /* line 108, sass/partials/_home.scss */
+        @media (max-width: 766px) {
+          /* line 137, sass/partials/_home.scss */
+          body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a span.elementor-button-icon.elementor-align-icon-right {
+            display: block;
+            top: 20px;
+            left: 92%;
+            position: absolute; } }
+      /* line 148, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         background-color: #29CBFC; }
-  /* line 116, sass/partials/_home.scss */
+  /* line 156, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 {
     margin-top: 60px;
     margin-bottom: 60px; }
-    /* line 119, sass/partials/_home.scss */
+    /* line 159, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides {
       display: flex;
       justify-content: center;
@@ -1464,13 +1589,29 @@ body.home main#primary article {
       list-style: none;
       padding-left: 0;
       margin-left: 0; }
-      /* line 126, sass/partials/_home.scss */
+      @media (max-width: 1024px) {
+        /* line 159, sass/partials/_home.scss */
+        body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides {
+          flex-wrap: wrap; } }
+      /* line 169, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
         text-align: center; }
-        /* line 128, sass/partials/_home.scss */
+        @media (max-width: 1024px) {
+          /* line 169, sass/partials/_home.scss */
+          body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
+            width: 50%;
+            margin-bottom: 30px; } }
+        @media (max-width: 767px) {
+          /* line 169, sass/partials/_home.scss */
+          body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
+            width: 100%; }
+            /* line 177, sass/partials/_home.scss */
+            body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li:last-child {
+              margin-bottom: 0; } }
+        /* line 181, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li img {
           margin-bottom: 20px; }
-        /* line 131, sass/partials/_home.scss */
+        /* line 184, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li h5 {
           color: #0286AD;
           font-family: "Inter", Sans-serif;
@@ -1478,7 +1619,7 @@ body.home main#primary article {
           font-weight: 300;
           line-height: 1.3em;
           margin-bottom: 20px; }
-        /* line 139, sass/partials/_home.scss */
+        /* line 192, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li p {
           color: #7a7a7a;
           font-family: "Roboto", Sans-serif;
@@ -1487,7 +1628,7 @@ body.home main#primary article {
           font-size: 16px;
           max-width: 80%;
           margin: 0 auto; }
-  /* line 152, sass/partials/_home.scss */
+  /* line 205, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.imagen-fondo {
     background-position: center !important;
     /* Center the image */
@@ -1496,7 +1637,7 @@ body.home main#primary article {
     background-size: cover !important;
     /* Resize the background image to cover the entire container */
     height: 500px; }
-  /* line 158, sass/partials/_home.scss */
+  /* line 211, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.roche {
     background-position: center !important;
     /* Center the image */
@@ -1506,7 +1647,7 @@ body.home main#primary article {
     /* Resize the background image to cover the entire container */
     padding-top: 75px;
     padding-bottom: 90px; }
-    /* line 164, sass/partials/_home.scss */
+    /* line 217, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.roche h2 {
       color: #FFFFFF;
       font-family: "Inter", Sans-serif;
@@ -1514,7 +1655,7 @@ body.home main#primary article {
       font-weight: 600;
       line-height: 1.3em;
       text-align: center; }
-    /* line 172, sass/partials/_home.scss */
+    /* line 225, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.roche p {
       text-align: center;
       color: #FFFFFF;
@@ -1523,7 +1664,7 @@ body.home main#primary article {
       font-weight: 400;
       max-width: 65%;
       margin: 0 auto; }
-  /* line 183, sass/partials/_home.scss */
+  /* line 236, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.talleres-realizados h2 {
     color: #026F90;
     font-family: "Inter", Sans-serif;
@@ -1531,6 +1672,20 @@ body.home main#primary article {
     font-weight: 200;
     letter-spacing: 0.5px;
     text-align: center;
-    margin-top: 75px; }
+    margin-top: 75px;
+    margin-bottom: 25px; }
+  @media (max-width: 767px) {
+    /* line 248, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section#talleres-posts-home .talleres-posts-home {
+      flex-wrap: wrap;
+      justify-content: center; } }
+  @media (max-width: 767px) {
+    /* line 253, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section#talleres-posts-home .talleres-posts-home .taller-post-item {
+      width: 100%; } }
+  @media (max-width: 767px) {
+    /* line 258, sass/partials/_home.scss */
+    body.home main#primary article .entry-content section#talleres-posts-home .talleres-posts-home .taller-post-item article img {
+      width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
