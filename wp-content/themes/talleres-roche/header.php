@@ -51,7 +51,12 @@
             </div><!-- .site-branding -->
 
             <nav id="site-navigation" class="main-navigation">
-                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'roche' ); ?></button>
+                <button class="menu-toggle navbar-toggler second-button" aria-controls="primary-menu" aria-expanded="false" type="button" data-mdb-toggle="collapse"><div class="animated-icon2"><span></span><span></span><span></span><span></span></div></button>
+                <script>
+                document.querySelector('.second-button').addEventListener('click', function () {
+                    document.querySelector('.animated-icon2').classList.toggle('open');
+                });
+                </script>
                 <?php
                 wp_nav_menu(
                     array(
