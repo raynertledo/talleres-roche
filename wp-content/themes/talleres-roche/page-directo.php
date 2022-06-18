@@ -38,15 +38,17 @@ get_header();
 								</div>								
 							</div>
 					</section>
+				<?php	if ( comments_open() || get_comments_number() ) : ?>
 					<section class="directo-comments">
 						<div class="comments-for-directo">
 							<?php
-								if ( comments_open() || get_comments_number() ) :
+								
 									comments_template();
-								endif;
+								
 							?>
 						</div>
 					</section>
+				<?php endif; ?>
 	</main><!-- #main -->
 
 <?php
