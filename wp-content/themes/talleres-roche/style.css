@@ -1100,8 +1100,26 @@ section.directo-comments {
     /* line 400, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo a {
       color: #0286ad; }
+    /* line 404, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo .form-submit input {
+      background-color: #0286AD;
+      padding: 10px 16px 12px 16px;
+      color: #55595c;
+      font-weight: 600; }
+    /* line 411, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo input:focus-visible, section.directo-comments .comments-for-directo textarea:focus-visible {
+      outline: #0286AD auto 1px; }
+    /* line 414, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo input {
+      margin: 10px 10px 10px 0; }
+    /* line 417, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo p.comment-form-cookies-consent {
+      display: flex; }
+    /* line 420, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo #wp-comment-cookies-consent {
+      margin-top: 6px; }
 
-/* line 407, sass/components/content/_posts-and-pages.scss */
+/* line 427, sass/components/content/_posts-and-pages.scss */
 .taller-single-post.page-directo .presentation-container {
   max-width: 1140px;
   padding-bottom: 30px;
