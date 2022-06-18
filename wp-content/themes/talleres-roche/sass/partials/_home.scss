@@ -10,9 +10,13 @@ body.home{
           background-size: cover !important; /* Resize the background image to cover the entire container */
           display: grid;
           align-items: center;
+          min-height: 704px;
           .container{
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 70% 30%;
+            @media (max-width:768px){
+                  grid-template-columns: 90% 10%;
+            }
             .hero-left{
               h2{
                 color: #FFFFFF;
@@ -21,7 +25,11 @@ body.home{
                 font-weight: 500;
                 text-transform: none;
                 line-height: 1.3em;
+                margin-bottom: 30px;
                 text-shadow: 3px 3px 9px rgba(142, 178, 211, 39%);
+                @media (max-width:1024px){
+                  font-size: 32px;
+                }
               }
               h5{
                 color: rgb(255, 255, 255);
@@ -31,6 +39,9 @@ body.home{
                 font-weight: 600;
                 font-size: 1.313rem;
                 margin-bottom: 50px;
+                @media (max-width:1024px){
+                  font-size: 18px;
+                }
               }
               a{
                 background-color: #0286AD;
@@ -43,10 +54,22 @@ body.home{
                 line-height: 28px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
+                @media (max-width:766px){
+                  width: 100%;
+                  display:block;
+                  position:relative;
+                }
                 span.elementor-button-icon.elementor-align-icon-right {
                   position: relative;
                   left: 5px;
                   top: 1px;
+                  @media (max-width:766px){
+                    width: 100%;
+                    display:block;
+                    top: 20px;
+                    left: 92%;                    
+                    position: absolute;
+                  }
                 }
                 &:hover{
                   -webkit-transform: scale(1.1);
@@ -65,8 +88,14 @@ body.home{
             margin-top: 40px;
             margin-bottom: 60px;
             text-align: center;
+            @media (max-width:766px){
+              grid-template-columns: 100%;
+            }
             .seccion-experiencia1a{
               text-align: center;
+              @media (max-width:766px){
+                padding: 30px 0;
+              }
               img{
                 width: 50%;
               }
@@ -100,10 +129,21 @@ body.home{
                 line-height: 28px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
+                @media (max-width:766px){
+                  width: 100%;
+                  display: block;
+                  position: relative;
+                }
                 span.elementor-button-icon.elementor-align-icon-right {
                   position: relative;
                   left: 5px;
                   top: 1px;
+                  @media (max-width:766px){
+                    display:block;
+                    top: 20px;
+                    left: 92%;                    
+                    position: absolute;
+                  }
                 }
                 &:hover{
                   -webkit-transform: scale(1.1);
@@ -123,8 +163,21 @@ body.home{
               list-style: none;
               padding-left: 0;
               margin-left: 0;
+               @media (max-width:1024px){
+                  flex-wrap:wrap;
+               }
               li{
                 text-align: center;
+                @media (max-width:1024px){
+                  width:50%;
+                  margin-bottom: 30px;
+               }
+               @media (max-width:767px){
+                  width:100%;
+                  &:last-child{
+                  margin-bottom:0;
+                  }
+               }
                 img{
                   margin-bottom: 20px;
                 }
@@ -188,6 +241,27 @@ body.home{
             letter-spacing: 0.5px;
             text-align: center;
             margin-top: 75px;
+            margin-bottom: 25px;
+          }
+        }
+        section#talleres-posts-home{
+          .talleres-posts-home{
+            @media (max-width:767px){
+              flex-wrap:wrap;
+              justify-content: center;
+            }
+            .taller-post-item{
+              @media (max-width:767px){
+                width:100%;
+              }
+              article{
+                img{                  
+                  @media (max-width:767px){
+                    width: 100%;
+                  }
+                }
+              }
+            }
           }
         }
       }
