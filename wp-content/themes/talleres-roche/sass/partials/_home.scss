@@ -14,8 +14,9 @@ body.home {
           .container {
             display: grid;
             grid-template-columns: 70% 30%;
-            @media (max-width: 768px) {
-              grid-template-columns: 90% 10%;
+
+            @media (max-width:768px){
+                  grid-template-columns: 100% 0%;
             }
             .hero-left {
               h2 {
@@ -54,12 +55,16 @@ body.home {
                 line-height: 28px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
-                display: inline-block;
-                width: fit-content;
-                @media (max-width: 766px) {
-                  width: fit-content;
-                  display: block;
-                  position: relative;
+
+                display: block;
+                transition: all 1s;
+                max-width: 215px;
+                @media (max-width:766px){
+                  width: 100%;
+                  display:block;
+                  position:relative;
+                  max-width: 100%;
+
                 }
                 span.elementor-button-icon.elementor-align-icon-right {
                   position: relative;
@@ -75,8 +80,10 @@ body.home {
                 }
                 &:hover {
                   -webkit-transform: scale(1.1);
-                  transform: scale(1.1);
-                  background-color: #29cbfc;
+
+                  transform: scale(1.05);
+                  background-color: #29CBFC;
+
                 }
               }
             }
@@ -131,12 +138,16 @@ body.home {
                 line-height: 28px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
-                display: inline-block;
-                width: fit-content;
-                @media (max-width: 766px) {
+
+                display: block;
+                max-width: 220px;
+                margin: auto;
+                @media (max-width:766px){
+
                   width: 100%;
                   display: block;
                   position: relative;
+                  max-width: unset;
                 }
                 span.elementor-button-icon.elementor-align-icon-right {
                   position: relative;

@@ -105,18 +105,12 @@ jQuery(document).ready(function(){
 		var title_actual_id = title_actual.attr("id");
 		var title_actual_post_id = title_actual_id.substr(13);
 
-		//jQuery(".content-taller-description").toggleClass("d-block");
-		//jQuery(".content-taller-description").toggleClass("positioning");
-		
-		//jQuery(".content-taller-description").toggleClass("invisible");
-		//jQuery(".content-taller-description").toggleClass("visible");
-
 		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("d-block");
 		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("positioning");
-		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("invisible");
-		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("visible");
-		//jQuery(".content-taller-description").toggleClass("opacidad1");
-		//jQuery(".content-taller-description").toggle("slow");
+		//jQuery(".content_taller_description_"+title_actual_post_id).parent().toggleClass("positioning");
+		
+		//jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("invisible");
+		//jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("visible");
 
 		jQuery(".description-hidden").toggleClass("d-none");
 		jQuery(".description-hidden").toggleClass("d-block");
@@ -182,8 +176,29 @@ jQuery(document).ready(function(){
 			jQuery("iframe").attr("position","relative");
 			jQuery("iframe").attr("display","block");
 
-			/*jQuery(".post-thumbnail img").hover(function() {
-											  jQuery( this ).fadeOut( 100 );											  
-											});*/
+
+document.addEventListener('scroll', function(){
+	let elements = document.getElementsByClassName('scroll-content');
+	let screenSize = window.innerHeight;
+  	
+    for(var i = 0; i < elements.length; i++) {
+    var element = elements[i];
+
+    if(element.getBoundingClientRect().top < screenSize) {
+      	//alert(element.getBoundingClientRect().top);
+        element.classList.add('visible-effect');
+        element.classList.remove('scroll-content');
+    } else {
+        element.classList.remove('visible-effect');
+      }
+
+    }
+});	
+
+    jQuery('.scroll-content1').each(function(){
+    		jQuery( this ).removeClass( "scroll-content1" );
+		    jQuery( this ).addClass( "visible-effect" );
+		  });
 
 });
+
