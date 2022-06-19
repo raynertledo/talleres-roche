@@ -1704,32 +1704,34 @@ body.home main#primary article {
         text-transform: capitalize;
         line-height: 28px;
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        display: inline-block;
+        width: fit-content; }
         @media (max-width: 766px) {
           /* line 46, sass/partials/_home.scss */
           body.home main#primary article .entry-content section.hero .container .hero-left a {
             width: fit-content;
             display: block;
             position: relative; } }
-        /* line 62, sass/partials/_home.scss */
+        /* line 64, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.hero .container .hero-left a span.elementor-button-icon.elementor-align-icon-right {
           position: relative;
           left: 5px;
           top: 1px; }
           @media (max-width: 766px) {
-            /* line 62, sass/partials/_home.scss */
+            /* line 64, sass/partials/_home.scss */
             body.home main#primary article .entry-content section.hero .container .hero-left a span.elementor-button-icon.elementor-align-icon-right {
               width: 100%;
               /*display: block;
               top: 20px;
               left: 92%;
               position: absolute;*/ } }
-        /* line 74, sass/partials/_home.scss */
+        /* line 76, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.hero .container .hero-left a:hover {
           -webkit-transform: scale(1.1);
           transform: scale(1.1);
           background-color: #29cbfc; }
-  /* line 84, sass/partials/_home.scss */
+  /* line 86, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1738,20 +1740,20 @@ body.home main#primary article {
     margin-bottom: 60px;
     text-align: center; }
     @media (max-width: 766px) {
-      /* line 84, sass/partials/_home.scss */
+      /* line 86, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 {
         grid-template-columns: 100%; } }
-    /* line 94, sass/partials/_home.scss */
+    /* line 96, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a {
       text-align: center; }
       @media (max-width: 766px) {
-        /* line 94, sass/partials/_home.scss */
+        /* line 96, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a {
           padding: 30px 0; } }
-      /* line 99, sass/partials/_home.scss */
+      /* line 101, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1a img {
         width: 50%; }
-    /* line 104, sass/partials/_home.scss */
+    /* line 106, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b h2 {
       color: #026f90;
       font-family: "Roboto", Sans-serif;
@@ -1760,7 +1762,7 @@ body.home main#primary article {
       letter-spacing: 0.5px;
       margin-bottom: 20px;
       line-height: 1; }
-    /* line 113, sass/partials/_home.scss */
+    /* line 115, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b p {
       color: #7a7a7a;
       font-family: "Roboto", Sans-serif;
@@ -1768,7 +1770,7 @@ body.home main#primary article {
       letter-spacing: 0.4px;
       font-size: 16px;
       margin-bottom: 45px; }
-    /* line 121, sass/partials/_home.scss */
+    /* line 123, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a {
       background-color: #0286ad;
       border-radius: 6px 6px 6px 6px;
@@ -1779,35 +1781,37 @@ body.home main#primary article {
       text-transform: capitalize;
       line-height: 28px;
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      display: inline-block;
+      width: fit-content; }
       @media (max-width: 766px) {
-        /* line 121, sass/partials/_home.scss */
+        /* line 123, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a {
           width: 100%;
           display: block;
           position: relative; } }
-      /* line 137, sass/partials/_home.scss */
+      /* line 141, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a span.elementor-button-icon.elementor-align-icon-right {
         position: relative;
         left: 5px;
         top: 1px; }
         @media (max-width: 766px) {
-          /* line 137, sass/partials/_home.scss */
+          /* line 141, sass/partials/_home.scss */
           body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a span.elementor-button-icon.elementor-align-icon-right {
             display: block;
             top: 20px;
             left: 92%;
             position: absolute; } }
-      /* line 148, sass/partials/_home.scss */
+      /* line 152, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia1 .seccion-experiencia1b a:hover {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
         background-color: #29cbfc; }
-  /* line 156, sass/partials/_home.scss */
+  /* line 160, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 {
     margin-top: 60px;
     margin-bottom: 60px; }
-    /* line 159, sass/partials/_home.scss */
+    /* line 163, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides {
       display: flex;
       justify-content: center;
@@ -1816,28 +1820,28 @@ body.home main#primary article {
       padding-left: 0;
       margin-left: 0; }
       @media (max-width: 1024px) {
-        /* line 159, sass/partials/_home.scss */
+        /* line 163, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides {
           flex-wrap: wrap; } }
-      /* line 169, sass/partials/_home.scss */
+      /* line 173, sass/partials/_home.scss */
       body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
         text-align: center; }
         @media (max-width: 1024px) {
-          /* line 169, sass/partials/_home.scss */
+          /* line 173, sass/partials/_home.scss */
           body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
             width: 50%;
             margin-bottom: 30px; } }
         @media (max-width: 767px) {
-          /* line 169, sass/partials/_home.scss */
+          /* line 173, sass/partials/_home.scss */
           body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li {
             width: 100%; }
-            /* line 177, sass/partials/_home.scss */
+            /* line 181, sass/partials/_home.scss */
             body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li:last-child {
               margin-bottom: 0; } }
-        /* line 181, sass/partials/_home.scss */
+        /* line 185, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li img {
           margin-bottom: 20px; }
-        /* line 184, sass/partials/_home.scss */
+        /* line 188, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li h5 {
           color: #0286ad;
           font-family: "Inter", Sans-serif;
@@ -1845,7 +1849,7 @@ body.home main#primary article {
           font-weight: 300;
           line-height: 1.3em;
           margin-bottom: 20px; }
-        /* line 192, sass/partials/_home.scss */
+        /* line 196, sass/partials/_home.scss */
         body.home main#primary article .entry-content section.seccion-experiencia .seccion-experiencia2 .slides li p {
           color: #7a7a7a;
           font-family: "Roboto", Sans-serif;
@@ -1854,7 +1858,7 @@ body.home main#primary article {
           font-size: 16px;
           max-width: 80%;
           margin: 0 auto; }
-  /* line 205, sass/partials/_home.scss */
+  /* line 209, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.imagen-fondo {
     background-position: center !important;
     /* Center the image */
@@ -1863,7 +1867,7 @@ body.home main#primary article {
     background-size: cover !important;
     /* Resize the background image to cover the entire container */
     height: 500px; }
-  /* line 211, sass/partials/_home.scss */
+  /* line 215, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.roche {
     background-position: center !important;
     /* Center the image */
@@ -1873,7 +1877,7 @@ body.home main#primary article {
     /* Resize the background image to cover the entire container */
     padding-top: 75px;
     padding-bottom: 90px; }
-    /* line 217, sass/partials/_home.scss */
+    /* line 221, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.roche h2 {
       color: #ffffff;
       font-family: "Inter", Sans-serif;
@@ -1881,7 +1885,7 @@ body.home main#primary article {
       font-weight: 600;
       line-height: 1.3em;
       text-align: center; }
-    /* line 225, sass/partials/_home.scss */
+    /* line 229, sass/partials/_home.scss */
     body.home main#primary article .entry-content section.roche p {
       text-align: center;
       color: #ffffff;
@@ -1890,7 +1894,7 @@ body.home main#primary article {
       font-weight: 400;
       max-width: 65%;
       margin: 0 auto; }
-  /* line 236, sass/partials/_home.scss */
+  /* line 240, sass/partials/_home.scss */
   body.home main#primary article .entry-content section.talleres-realizados h2 {
     color: #026f90;
     font-family: "Inter", Sans-serif;
@@ -1901,16 +1905,16 @@ body.home main#primary article {
     margin-top: 75px;
     margin-bottom: 25px; }
   @media (max-width: 767px) {
-    /* line 248, sass/partials/_home.scss */
+    /* line 252, sass/partials/_home.scss */
     body.home main#primary article .entry-content section#talleres-posts-home .talleres-posts-home {
       flex-wrap: wrap;
       justify-content: center; } }
   @media (max-width: 767px) {
-    /* line 253, sass/partials/_home.scss */
+    /* line 257, sass/partials/_home.scss */
     body.home main#primary article .entry-content section#talleres-posts-home .talleres-posts-home .taller-post-item {
       width: 100%; } }
   @media (max-width: 767px) {
-    /* line 258, sass/partials/_home.scss */
+    /* line 262, sass/partials/_home.scss */
     body.home main#primary article .entry-content section#talleres-posts-home .talleres-posts-home .taller-post-item article img {
       width: 100%; } }
 

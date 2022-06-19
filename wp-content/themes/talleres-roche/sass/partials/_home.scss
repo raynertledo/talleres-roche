@@ -54,6 +54,8 @@ body.home {
                 line-height: 28px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
+                display: inline-block;
+                width: fit-content;
                 @media (max-width: 766px) {
                   width: fit-content;
                   display: block;
@@ -129,6 +131,8 @@ body.home {
                 line-height: 28px;
                 color: rgb(255, 255, 255);
                 text-decoration: none;
+                display: inline-block;
+                width: fit-content;
                 @media (max-width: 766px) {
                   width: 100%;
                   display: block;
