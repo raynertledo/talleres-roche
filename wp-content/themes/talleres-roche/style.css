@@ -1026,7 +1026,6 @@ header.site-header {
         -moz-transition: max-height 1s;
         -ms-transition: max-height 1s;
         -o-transition: max-height 1s;
-        /*transition: max-height 1s ease;*/
         transition: all 1s ease;
         max-height: 300px;
         border: solid 1px #88888836;
@@ -1036,68 +1035,68 @@ header.site-header {
         top: 0;
         line-height: 1.8;
         max-height: 300px; }
-        /* line 332, sass/components/content/_posts-and-pages.scss */
+        /* line 330, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .parent-container-taller-description .content-taller-description.positioning {
           max-height: 0; }
-      /* line 336, sass/components/content/_posts-and-pages.scss */
+      /* line 334, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .parent-container-taller-description .positioning {
         max-height: 0;
         padding: 0 25px; }
-    /* line 341, sass/components/content/_posts-and-pages.scss */
+    /* line 339, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .positioning {
       max-height: 0; }
-    /* line 344, sass/components/content/_posts-and-pages.scss */
+    /* line 342, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .opacidad1 {
       opacity: 1; }
-    /* line 347, sass/components/content/_posts-and-pages.scss */
+    /* line 345, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .cerrado {
       color: #89A0FF; }
-    /* line 350, sass/components/content/_posts-and-pages.scss */
+    /* line 348, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .video-diapo {
       margin-top: 20px;
       font-size: 16px;
       font-family: 'Inter', sans-serif;
       /*flex-wrap: wrap;*/ }
       @media (max-width: 690px) {
-        /* line 350, sass/components/content/_posts-and-pages.scss */
+        /* line 348, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo {
           width: 100% !important;
           display: block !important; } }
-      /* line 359, sass/components/content/_posts-and-pages.scss */
+      /* line 357, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo div {
         background-color: #EDEDED;
         color: #012D3A;
         border-radius: 6px 6px 6px 6px;
         padding: 16px 24px;
         margin: 15px; }
-        /* line 365, sass/components/content/_posts-and-pages.scss */
+        /* line 363, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div:hover {
           background-color: #29CBFC;
           color: #FFFFFF;
           cursor: pointer; }
         @media (max-width: 690px) {
-          /* line 359, sass/components/content/_posts-and-pages.scss */
+          /* line 357, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div {
             width: 100% !important;
             margin-left: 0;
             margin-right: 0; } }
-        /* line 375, sass/components/content/_posts-and-pages.scss */
+        /* line 373, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div a {
           color: #012D3A;
           text-decoration: none; }
-          /* line 378, sass/components/content/_posts-and-pages.scss */
+          /* line 376, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div a:hover {
             text-decoration: none; }
-      /* line 383, sass/components/content/_posts-and-pages.scss */
+      /* line 381, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo .active {
         background-color: #0286AD;
         position: relative;
         color: #fff; }
-        /* line 387, sass/components/content/_posts-and-pages.scss */
+        /* line 385, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:hover {
           background-color: #0286AD;
           color: #fff; }
-        /* line 391, sass/components/content/_posts-and-pages.scss */
+        /* line 389, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:after {
           content: "";
           position: absolute;
@@ -1108,22 +1107,22 @@ header.site-header {
           height: 18px;
           background-color: #0286AD;
           transform: rotate(45deg); }
-        /* line 402, sass/components/content/_posts-and-pages.scss */
+        /* line 400, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active a {
           color: #fff; }
-    /* line 407, sass/components/content/_posts-and-pages.scss */
+    /* line 405, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .presentation-container {
       min-height: 400px;
       width: 100%;
       position: relative;
       display: block; }
-      /* line 412, sass/components/content/_posts-and-pages.scss */
+      /* line 410, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .presentation-container .t-video, #page .taller-single-post article .presentation-container .t-presentation {
         min-height: 400px;
         width: 100%;
         position: relative;
         display: block; }
-        /* line 417, sass/components/content/_posts-and-pages.scss */
+        /* line 415, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .presentation-container .t-video .t-video iframe, #page .taller-single-post article .presentation-container .t-video .t-presentation iframe, #page .taller-single-post article .presentation-container .t-presentation .t-video iframe, #page .taller-single-post article .presentation-container .t-presentation .t-presentation iframe {
           width: 100%;
           height: 400px;
@@ -1131,10 +1130,10 @@ header.site-header {
           position: relative;
           display: block; }
 
-/* line 430, sass/components/content/_posts-and-pages.scss */
+/* line 429, sass/components/content/_posts-and-pages.scss */
 section.directo-comments {
   padding: 0 20px 50px 20px; }
-  /* line 432, sass/components/content/_posts-and-pages.scss */
+  /* line 431, sass/components/content/_posts-and-pages.scss */
   section.directo-comments .comments-for-directo {
     max-width: 1140px;
     padding: 30px;
@@ -1143,23 +1142,24 @@ section.directo-comments {
     position: relative;
     display: block;
     height: auto;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     border-radius: 8px 8px 8px 8px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     color: #55595c; }
-    /* line 445, sass/components/content/_posts-and-pages.scss */
+    /* line 444, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo a {
       color: #0286ad; }
-    /* line 449, sass/components/content/_posts-and-pages.scss */
+    /* line 448, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo .form-submit input {
-      background-color: #0286AD;
+      background-color: #0286ad;
       padding: 10px 16px 12px 16px;
       color: #55595c;
       font-weight: 600; }
-    /* line 456, sass/components/content/_posts-and-pages.scss */
-    section.directo-comments .comments-for-directo input:focus-visible, section.directo-comments .comments-for-directo textarea:focus-visible {
-      outline: #0286AD auto 1px; }
+    /* line 455, sass/components/content/_posts-and-pages.scss */
+    section.directo-comments .comments-for-directo input:focus-visible,
+    section.directo-comments .comments-for-directo textarea:focus-visible {
+      outline: #0286ad auto 1px; }
     /* line 459, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo input {
       margin: 10px 10px 10px 0; }
