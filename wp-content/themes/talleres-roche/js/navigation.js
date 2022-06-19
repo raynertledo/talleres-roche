@@ -107,9 +107,10 @@ jQuery(document).ready(function(){
 
 		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("d-block");
 		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("positioning");
-		//jQuery(".parent-container-taller-description").toggleClass("positioning");
-		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("invisible");
-		jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("visible");
+		//jQuery(".content_taller_description_"+title_actual_post_id).parent().toggleClass("positioning");
+		
+		//jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("invisible");
+		//jQuery(".content_taller_description_"+title_actual_post_id).toggleClass("visible");
 
 		jQuery(".description-hidden").toggleClass("d-none");
 		jQuery(".description-hidden").toggleClass("d-block");

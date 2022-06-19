@@ -87,10 +87,12 @@ get_header();
 						<?php endwhile; ?>
 						</div>
 						<?php endif; ?>
+						<div class="test">
 							<div id="<?php echo 'title-taller-'.get_the_ID(); ?>" class="title-taller-description"><span class="d-none invisible description-hidden plus-sign"><i class="fas fa-plus"></i></span><span class="visible d-block description-showed minus-sign"><i class="fas fa-minus"></i></span><div class=""><?php _e('Descripción del taller', 'roche'); ?></div></div>	
 
 
-							<div class="parent-container-taller-description"><div class="visible content-taller-description <?php echo 'content_taller_description_'.get_the_ID(); ?>"><?php echo get_field('taller_descripcion'); ?></div></div>						
+							<div class="parent-container-taller-description"><div class="content-taller-description <?php echo 'content_taller_description_'.get_the_ID(); ?>"><?php echo get_field('taller_descripcion'); ?></div></div>						
+						</div>
 
 							<?php if(get_field('mostrar_video-presentacion') && get_field('mostrar_video-presentacion') === true): ?>
 							<div class="video-diapo d-flex w-100">
