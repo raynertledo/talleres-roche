@@ -459,11 +459,11 @@ big {
 /* line 1, sass/base/elements/_body.scss */
 body {
   background: #fff;
-  background-color: #F8F8F8; }
+  background-color: #f8f8f8; }
 
 /* line 1, sass/base/elements/_hr.scss */
 hr {
-  background-color: #ccc;
+  background-color: #111111;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
