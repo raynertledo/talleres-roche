@@ -2,36 +2,39 @@ footer#colophon {
   background-color: #f2f2f2;
   padding-top: 40px;
   padding-bottom: 5px;
-  .seccion1{
+  .seccion1 {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-items: center;
     align-items: center;
     margin-bottom: 40px;
-    .seccion1a{
-      .logo-footer{
+    .seccion1a {
+      .logo-footer {
         text-align: center;
-        a{
-          img{
+        a {
+          img {
             width: 60%;
             margin-bottom: 25px;
           }
         }
       }
-      .direccion{
-        p{
+      .direccion {
+        p {
           font-family: "Roboto", Sans-serif;
-          font-weight: 400;
+          font-weight: 300;
           text-align: center;
           color: #7a7a7a;
-          font-size: 13px;
+          font-size: 12px;
+        }
+        b {
+          font-weight: 700;
         }
       }
     }
   }
-  .site-info{
-    .creditos{
-      p{
+  .site-info {
+    .creditos {
+      p {
         font-family: "Roboto", Sans-serif;
         font-size: 10px;
         font-weight: 300;
@@ -39,24 +42,24 @@ footer#colophon {
         color: #7a7a7a;
       }
     }
-    .politicas{
-      .slides{
+    .politicas {
+      .slides {
         display: flex;
         justify-content: center;
         align-items: center;
         list-style: none;
         padding-left: 0;
         margin-left: 0;
-        li{
-          a{
+        li {
+          a {
             color: #16181a;
             font-family: "Roboto", Sans-serif;
             font-size: 9px;
             font-weight: 300;
             text-decoration: none;
             margin: 10px;
-            &:hover{
-              color: rgb(121,99,224);
+            &:hover {
+              color: rgb(121, 99, 224);
             }
           }
         }

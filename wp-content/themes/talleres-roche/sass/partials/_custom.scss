@@ -1,9 +1,10 @@
-body{
+body {
   margin-bottom: 0 !important;
   main#primary {
     margin-top: 90px;
   }
 }
+
 .fadeTop-effect {
   opacity: 0; 
   transform: translate(0, 10vh);
@@ -13,4 +14,70 @@ body{
 .visible-effect {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.cmplz-cookiebanner .cmplz-links.cmplz-information {
+  display: none;
+}
+div#cmplz-message-1-optin,
+a.cmplz-link.privacy-statement,
+button.cmplz-btn.cmplz-accept,
+button.cmplz-btn.cmplz-deny,
+button.cmplz-btn.cmplz-view-preferences,
+a.cmplz-link.cookie-statement {
+  font-family: "Inter";
+}
+.cmplz-cookiebanner.banner-1.optin.cmplz-bottom-right.cmplz-categories-type-view-preferences.cmplz-show {
+  line-height: 1.8;
+}
+/*cookie page*/
+#cmplz-document h2 {
+  font-family: "inter";
+  color: black;
+  font-weight: 600;
+}
+
+#cmplz-document h2,
+#cmplz-document h3 {
+  font-size: 22px;
+  text-align: left;
+  margin-top: 15px;
+  text-transform: initial;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c6c6c6;
+  margin-bottom: 10px;
+}
+aside#secondary {
+  display: none;
+}
+article#post-176 {
+  max-width: 585px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.cmplz-document footer#colophon {
+  display: none;
+}
+/*comment sectios*/
+section.directo-comments {
+  display: none;
+}
+#post-176 h1.entry-title {
+  display: none;
+}
+.police-button a.wp-block-button__link {
+  background-color: #0286ad;
+  font-family: "Roboto";
+  border-radius: 3px;
+  font-size: 15px;
+  padding: 12px 24px;
+  line-height: 1;
+  font-weight: 500;
+}
+#post-176 .wp-container-1.wp-block-buttons {
+  justify-content: center;
+}
+article#post-176 {
+  margin-bottom: 0;
 }
