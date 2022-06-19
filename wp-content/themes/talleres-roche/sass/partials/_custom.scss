@@ -4,3 +4,13 @@ body{
     margin-top: 90px;
   }
 }
+.fadeTop-effect {
+  opacity: 0; 
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.visible-effect {
+  opacity: 1;
+  transform: translate(0, 0);
+}

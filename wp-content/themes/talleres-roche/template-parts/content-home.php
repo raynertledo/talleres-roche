@@ -32,14 +32,14 @@
         <section class="seccion-experiencia">
             <div class="container">
                 <div class="seccion-experiencia1">
-                    <div class="seccion-experiencia1a">
+                    <div class="seccion-experiencia1a scroll-content fadeTop-effect">
                         <?php if( get_field('experiencia_imagen') ): ?>
                             <img src="<?php the_field('experiencia_imagen'); ?>" />
                         <?php endif; ?>
                     </div>
                     <div class="seccion-experiencia1b">
-                        <h2><?php the_field('experiencia_titulo'); ?></h2>
-                        <p><?php the_field('experiencia_descripcion'); ?></p>
+                        <h2 class="scroll-content fadeTop-effect"><?php the_field('experiencia_titulo'); ?></h2>
+                        <p class="scroll-content fadeTop-effect"><?php the_field('experiencia_descripcion'); ?></p>
                         <?php
                         $link = get_field('experiencia_boton');
                         if( $link ):
@@ -47,11 +47,11 @@
                             $link_title = $link['title'];
                             $link_target = $link['target'] ? $link['target'] : '_self';
                             ?>
-                            <a class="button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><span><?php echo esc_html( $link_title ); ?></span><span class="elementor-button-icon elementor-align-icon-right"><i aria-hidden="true" class="fas fa-angle-right"></i></span></a>
+                            <a class="button scroll-content fadeTop-effect" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><span><?php echo esc_html( $link_title ); ?></span><span class="elementor-button-icon elementor-align-icon-right"><i aria-hidden="true" class="fas fa-angle-right"></i></span></a>
                         <?php endif; ?>
                     </div>
                 </div>
-                <hr class="separador">
+                <hr class="separador scroll-content fadeTop-effect">
                 <div class="seccion-experiencia2">
                     <?php if( have_rows('experiencias') ): ?>
                         <ul class="slides">
@@ -62,7 +62,7 @@
                                         <img src="<?php the_sub_field('experiencias_imagen'); ?>" />
                                     <?php endif; ?>
                                     <h5><?php the_sub_field('experiencias_titulo'); ?></h5>
-                                    <p><?php the_sub_field('experiencias_subtitulos'); ?></p>
+                                    <p class="scroll-content fadeTop-effect"><?php the_sub_field('experiencias_subtitulos'); ?></p>
                                 </li>
                             <?php endwhile; ?>
                         </ul>
@@ -72,7 +72,7 @@
         </section>
         <section class="imagen-fondo" style="background:radial-gradient(at top left, rgb(221 221 221) 10%, rgb(17 17 17 / 50%) 50%), url(<?php the_field('imagen'); ?>);">
         </section>
-        <section class="talleres-realizados">
+        <section class="talleres-realizados scroll-content fadeTop-effect">
             <div class="container">
                 <h2><?php the_field('talleres_realizados'); ?></h2>
             </div>
@@ -85,12 +85,13 @@
             'posts_per_page' => -1
         );
         $result = new WP_Query($args);
+        $link_talleres = get_field('link_talleres');
         if ( $result->have_posts() ) : ?>
-            <section id="talleres-posts-home" class="d-md-block"><div class="w-100 mx-auto d-flex talleres-posts talleres-posts-home">
+            <section id="talleres-posts-home" class="d-md-block scroll-content fadeTop-effect"><div class="w-100 mx-auto d-flex talleres-posts talleres-posts-home">
             <?php   while ( $result->have_posts() ) : $result->the_post(); ?>
                         <div class="taller-post-item text-center">
                             <article class="">
-                                <a href="<?php echo "#".get_the_ID(); ?>">              
+                                <a href="<?php echo $link_talleres."#".get_the_ID(); ?>">              
                                     <?php roche_post_thumbnail(); ?>
 
                                     <div class="taller-article-content">
