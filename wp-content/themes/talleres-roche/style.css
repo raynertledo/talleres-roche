@@ -1520,18 +1520,21 @@ footer#colophon {
     /* line 22, sass/partials/_footer.scss */
     footer#colophon .seccion1 .seccion1a .direccion p {
       font-family: "Roboto", Sans-serif;
-      font-weight: 400;
+      font-weight: 300;
       text-align: center;
       color: #7a7a7a;
-      font-size: 13px; }
-  /* line 34, sass/partials/_footer.scss */
+      font-size: 12px; }
+    /* line 29, sass/partials/_footer.scss */
+    footer#colophon .seccion1 .seccion1a .direccion b {
+      font-weight: 700; }
+  /* line 37, sass/partials/_footer.scss */
   footer#colophon .site-info .creditos p {
     font-family: "Roboto", Sans-serif;
     font-size: 10px;
     font-weight: 300;
     text-align: center;
     color: #7a7a7a; }
-  /* line 43, sass/partials/_footer.scss */
+  /* line 46, sass/partials/_footer.scss */
   footer#colophon .site-info .politicas .slides {
     display: flex;
     justify-content: center;
@@ -1539,7 +1542,7 @@ footer#colophon {
     list-style: none;
     padding-left: 0;
     margin-left: 0; }
-    /* line 51, sass/partials/_footer.scss */
+    /* line 54, sass/partials/_footer.scss */
     footer#colophon .site-info .politicas .slides li a {
       color: #16181a;
       font-family: "Roboto", Sans-serif;
@@ -1547,7 +1550,7 @@ footer#colophon {
       font-weight: 300;
       text-decoration: none;
       margin: 10px; }
-      /* line 58, sass/partials/_footer.scss */
+      /* line 61, sass/partials/_footer.scss */
       footer#colophon .site-info .politicas .slides li a:hover {
         color: #7963e0; }
 
