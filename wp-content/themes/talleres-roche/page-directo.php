@@ -16,11 +16,11 @@ get_header();
 ?>
 
 	<main id="primary" class="site-main">
-		<header class="entry-header-talleres" style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');">			
+		<header class="entry-header-talleres" style="background:radial-gradient(at top left, rgb(101 131 158) 18%, rgb(188 188 188 / 28%) 97%), url(<?php echo get_the_post_thumbnail_url(); ?>);">			
 			<div class="w-100 mx-auto section-subtitle">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				<?php if(get_field('pag_talleres_subtitulo')): ?>
-					   <p><?php echo get_field('pag_talleres_subtitulo'); ?></p>
+					   <p class="hero-directo"><?php echo get_field('pag_talleres_subtitulo'); ?></p>
 				<?php endif; ?>
 			</div>
 		</header>
