@@ -6,7 +6,7 @@ body {
 }
 
 .fadeTop-effect {
-  opacity: 0; 
+  opacity: 0;
   transform: translate(0, 10vh);
   transition: all 1s;
 }
@@ -80,4 +80,36 @@ section.directo-comments {
 }
 article#post-176 {
   margin-bottom: 0;
+}
+@media screen and (max-width: 750px) {
+  header#masthead .container .site-branding a img {
+    max-width: 336px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px) {
+  header#masthead .container .site-branding {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer#colophon .seccion1 .seccion1a .logo-footer a img {
+    max-width: 341px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer#colophon .seccion1 .seccion1a .logo-footer a img {
+    width: 62%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer#colophon .seccion1 .logo-escuela img {
+    width: 50%;
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer#colophon .seccion1 .logo-escuela img {
+    max-width: 275px;
+  }
 }
