@@ -12,7 +12,7 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-        <div class="container">
+        <div class="container-md">
             <div class="seccion1">
                 <div class="logo-escuela">
                     <?php if( get_field('logo_escuelas', 'option') ): ?>

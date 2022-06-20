@@ -13,7 +13,7 @@
 
 	<div class="entry-content">
 		<section class="hero" style="background:radial-gradient(at top left, rgb(101 131 158) 18%, rgb(188 188 188 / 28%) 97%), url(<?php the_field('hero_fondo'); ?>);">
-            <div class="container">
+            <div class="container container-md md-px-3">
                 <div class="hero-left">
                     <h2><?php the_field('hero_titulo'); ?></h2>
                     <h5><?php the_field('hero_subtitulo'); ?></h5>
@@ -70,8 +70,7 @@
                 </div>
             </div>
         </section>
-        <section class="imagen-fondo" style="background:radial-gradient(at top left, rgb(221 221 221) 10%, rgb(17 17 17 / 50%) 50%), url(<?php the_field('imagen'); ?>);">
-        </section>
+        <section class="imagen-fondo" style="background:url(<?php the_field('imagen'); ?>);"></section>
         <section class="talleres-realizados scroll-content fadeTop-effect">
             <div class="container">
                 <h2><?php the_field('talleres_realizados'); ?></h2>

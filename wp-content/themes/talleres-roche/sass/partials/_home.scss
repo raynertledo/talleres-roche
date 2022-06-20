@@ -13,7 +13,7 @@ body.home {
           min-height: 614px;
           .container {
             display: grid;
-            grid-template-columns: 70% 30%;
+            grid-template-columns: 50% 50%;
 
             @media (max-width:768px){
                   grid-template-columns: 100% 0%;
@@ -205,8 +205,8 @@ body.home {
                   margin-bottom: 20px;
                 }
                 p {
-                  color: #7a7a7a;
-                  font-family: "Roboto", Sans-serif;
+                  color: #7a7a7a;                  
+                  font-family: "Inter", Sans-serif;
                   font-weight: 300;
                   letter-spacing: 0.4px;
                   font-size: 16px;
@@ -248,6 +248,8 @@ body.home {
           }
         }
         section.talleres-realizados {
+          background-color:#f8f8f8;
+          padding: 5px 0;
           h2 {
             color: #026f90;
             font-family: "Inter", Sans-serif;
@@ -260,16 +262,20 @@ body.home {
           }
         }
         section#talleres-posts-home {
+          background-color:#f8f8f8;
           .talleres-posts-home {
             @media (max-width: 767px) {
               flex-wrap: wrap;
               justify-content: center;
+              max-width: 500px;
             }
             .taller-post-item {
+              background-color:#f8f8f8;
               @media (max-width: 767px) {
                 width: 100%;
               }
               article {
+                background-color:#fff;
                 img {
                   @media (max-width: 767px) {
                     width: 100%;
