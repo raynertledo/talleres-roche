@@ -43,6 +43,9 @@ get_header();
                 'post_status' => 'publish',
                 'posts_per_page' => -1
                 );
+			
+				$contador=1;
+							
 			$result = new WP_Query($args);
 			if ( $result->have_posts() ) : ?>
 				<section class="d-none d-md-block"><div class="w-100 mx-auto d-flex talleres-posts">
@@ -88,6 +91,7 @@ get_header();
 				</section>
 			<?php	while ( $result->have_posts() ) : $result->the_post(); ?>
 						<section class="taller-single-post scroll-content1 fadeTop-effect">
+						    
 							<article id="<?php echo get_the_ID(); ?>" class="w-100 mx-auto">
 								<?php roche_post_thumbnail(); ?>
 								<?php the_title( '<h3 class="entry-title text-center">', '</h3>' ); ?>
@@ -125,8 +129,8 @@ get_header();
 							</div>
 							<?php endif; ?>
 							<div class="test">
-								<div id="<?php echo 'title-taller-'.get_the_ID(); ?>" class="title-taller-description"><span class="d-none invisible description-hidden plus-sign"><i class="fas fa-plus"></i></span><span class="visible d-block description-showed minus-sign"><i class="fas fa-minus"></i></span><div class=""><?php _e('Descripción del taller', 'roche'); ?></div></div>	
-
+								<div id="<?php echo 'title-taller-'.get_the_ID(); ?>" class="title-taller-description <?php echo 'title-taller-description-'.$contador ?>"><span class="d-none invisible description-hidden plus-sign <?php echo 'description-hidden-'.$contador ?>"><i class="fas fa-plus"></i></span><span class="visible d-block description-showed minus-sign <?php echo 'description-showed-'.$contador ?>"><i class="fas fa-minus"></i></span><div class=""><?php _e('Descripción del taller', 'roche'); ?></div></div>	
+								<?php $contador++;?>
 
 								<div class="parent-container-taller-description"><div class="content-taller-description <?php echo 'content_taller_description_'.get_the_ID(); ?>"><?php echo get_field('taller_descripcion'); ?></div></div>						
 							</div>
@@ -143,8 +147,10 @@ get_header();
 									<div class="d-none t-presentation w-100 presentacion <?php echo 'presentacion_'.get_the_ID(); ?>"><iframe src="<?php echo get_field('taller_presentacion'); ?>"></iframe></div>
 								</div>
 							<?php endif; ?>
+							
 							</article>
 						</section>
+						
 			<?php	endwhile; ?>	
 	<?php	endif;	?>
 
