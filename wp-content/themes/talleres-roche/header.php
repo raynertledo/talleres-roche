@@ -55,9 +55,22 @@
                 <script>
                 document.querySelector('.second-button').addEventListener('click', function () {
                     document.querySelector('.animated-icon2').classList.toggle('open');
+					//document.querySelector('.animated-icon2').classList.remove('open');
                 });
                 </script>
-                <?php
+				<script>
+				const siteNavigation1 = document.getElementById( 'site-navigation' );
+				document.addEventListener( 'click', function( event ) {
+				const isClickInside = siteNavigation1.contains( event.target );
+				
+				if ( ! isClickInside ) {
+						document.querySelector('.animated-icon2').classList.remove('open');
+						}
+					} );
+						
+				</script>
+				
+				<?php
                 wp_nav_menu(
                     array(
                         'theme_location' => 'menu-1',

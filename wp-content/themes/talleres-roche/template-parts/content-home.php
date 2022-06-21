@@ -7,6 +7,7 @@
  * @package roche
  */
 
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -100,9 +101,36 @@
                                             //$fecha_taller = DateTime::createFormFormat(get_field('fecha_del_taller'));                                
                                             if(get_field('fecha_del_taller')):
                                                 //$fecha_taller = get_field('fecha_del_taller');
-                                                $fecha_taller = new DateTime(get_field('fecha_del_taller'));
+												
+												
+												// Load field value and convert to numeric timestamp.
+													$unixtimestamp = strtotime( get_field('fecha_del_taller') );
+
+													// Display date in the format "l d F, Y".
+													//echo date_i18n( "d F H:00", $unixtimestamp );
+													
+													
+													
+													
+												
+                                              $fecha_taller = new DateTime(get_field('fecha_del_taller'));
+												
                                         ?>
-                                        <div class="text-center fecha-taller"><?php echo $fecha_taller->format('j')." ".$de." ".$fecha_taller->format('F')." ".$a_las." ".$fecha_taller->format('G:i').$horas; ?></div><?php endif; ?>
+										  
+                                      <?php /*  <div class="text-center fecha-taller test"><?php echo $fecha_taller->format('j')." ".$de." ".$fecha_taller->format('F')." ".$a_las." ".$fecha_taller->format('G:i').$horas; ?></div><?php endif; ?>  */?>
+										 <div class="text-center fecha-taller">
+										 <?php 
+											echo date_i18n( "d ", $unixtimestamp );
+											echo "de ";
+											echo date_i18n( "F", $unixtimestamp );
+											echo " a las ";
+											echo date_i18n( "H:i", $unixtimestamp );
+											echo "h";
+										 ?>
+										 </div><?php endif; ?>
+										
+										
+										
                                         <span class="text-center"><?php _e('Ver taller', 'roche'); ?></span>
                                     </div>
                                 </a>                                                            
