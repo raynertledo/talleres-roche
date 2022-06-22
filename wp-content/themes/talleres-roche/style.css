@@ -815,28 +815,30 @@ header.site-header {
 #page .talleres-posts {
   max-width: 1140px;
   padding: 50px 0 90px 0;
-  font-family: "Inter", sans-serif; }
-  /* line 116, sass/components/content/_posts-and-pages.scss */
+  font-family: "Inter", sans-serif;
+  flex-wrap: wrap;
+  justify-content: center; }
+  /* line 118, sass/components/content/_posts-and-pages.scss */
   #page .talleres-posts .taller-post-item {
     width: 33%;
     padding: 10px; }
-    /* line 119, sass/components/content/_posts-and-pages.scss */
+    /* line 121, sass/components/content/_posts-and-pages.scss */
     #page .talleres-posts .taller-post-item article {
       border-radius: 8px 8px 8px 8px;
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
       min-height: 480px;
       position: relative; }
-      /* line 124, sass/components/content/_posts-and-pages.scss */
+      /* line 126, sass/components/content/_posts-and-pages.scss */
       #page .talleres-posts .taller-post-item article a {
         text-decoration: none;
         color: #55595c; }
-        /* line 127, sass/components/content/_posts-and-pages.scss */
+        /* line 129, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a:hover {
           text-decoration: none; }
-        /* line 130, sass/components/content/_posts-and-pages.scss */
+        /* line 132, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a .post-thumbnail {
           overflow: hidden; }
-          /* line 132, sass/components/content/_posts-and-pages.scss */
+          /* line 134, sass/components/content/_posts-and-pages.scss */
           #page .talleres-posts .taller-post-item article a .post-thumbnail img {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -844,15 +846,15 @@ header.site-header {
             object-fit: cover;
             object-position: center;
             transition: transform 0.6s; }
-            /* line 139, sass/components/content/_posts-and-pages.scss */
+            /* line 141, sass/components/content/_posts-and-pages.scss */
             #page .talleres-posts .taller-post-item article a .post-thumbnail img:hover {
               transform: scale(1.2); }
-        /* line 144, sass/components/content/_posts-and-pages.scss */
+        /* line 146, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article a .make-zoom {
           position: absolute;
           top: -9999em;
           left: -9999em; }
-      /* line 150, sass/components/content/_posts-and-pages.scss */
+      /* line 152, sass/components/content/_posts-and-pages.scss */
       #page .talleres-posts .taller-post-item article .taller-article-content {
         padding: 20px;
         font-size: 16px;
@@ -861,43 +863,43 @@ header.site-header {
         height: 300px;
         position: relative; }
         @media (max-width: 890px) {
-          /* line 150, sass/components/content/_posts-and-pages.scss */
+          /* line 152, sass/components/content/_posts-and-pages.scss */
           #page .talleres-posts .taller-post-item article .taller-article-content {
             height: 330px; } }
         @media (max-width: 768px) {
-          /* line 150, sass/components/content/_posts-and-pages.scss */
+          /* line 152, sass/components/content/_posts-and-pages.scss */
           #page .talleres-posts .taller-post-item article .taller-article-content {
             height: 320px; } }
         @media (max-width: 764px) {
-          /* line 150, sass/components/content/_posts-and-pages.scss */
+          /* line 152, sass/components/content/_posts-and-pages.scss */
           #page .talleres-posts .taller-post-item article .taller-article-content {
             height: 280px; } }
         @media (max-width: 350px) {
-          /* line 150, sass/components/content/_posts-and-pages.scss */
+          /* line 152, sass/components/content/_posts-and-pages.scss */
           #page .talleres-posts .taller-post-item article .taller-article-content {
             height: 300px; } }
-        /* line 170, sass/components/content/_posts-and-pages.scss */
+        /* line 172, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content:hover {
           text-decoration: none; }
-        /* line 173, sass/components/content/_posts-and-pages.scss */
+        /* line 175, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content h3,
         #page .talleres-posts .taller-post-item article .taller-article-content h2,
         #page .talleres-posts .taller-post-item article .taller-article-content div,
         #page .talleres-posts .taller-post-item article .taller-article-content span {
           margin-bottom: 15px;
           font-weight: 600; }
-        /* line 180, sass/components/content/_posts-and-pages.scss */
+        /* line 182, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content h3,
         #page .talleres-posts .taller-post-item article .taller-article-content h2 {
           font-size: 16px;
           font-weight: 700; }
-        /* line 185, sass/components/content/_posts-and-pages.scss */
+        /* line 187, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content div {
           font-weight: 400; }
-        /* line 188, sass/components/content/_posts-and-pages.scss */
+        /* line 190, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content .taller_subtitulo {
           /*height: 80px;*/ }
-        /* line 191, sass/components/content/_posts-and-pages.scss */
+        /* line 193, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content span {
           padding: 12px 18px;
           color: #0286ad;
@@ -914,25 +916,25 @@ header.site-header {
           bottom: 20px;
           left: 50%;
           margin-left: -80px; }
-        /* line 208, sass/components/content/_posts-and-pages.scss */
+        /* line 210, sass/components/content/_posts-and-pages.scss */
         #page .talleres-posts .taller-post-item article .taller-article-content p {
           margin-bottom: 15px; }
-/* line 215, sass/components/content/_posts-and-pages.scss */
+/* line 217, sass/components/content/_posts-and-pages.scss */
 #page .taller-single-post {
   padding: 20px;
   padding-bottom: 50px; }
   @media (max-width: 768px) {
-    /* line 215, sass/components/content/_posts-and-pages.scss */
+    /* line 217, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post {
       padding-bottom: 20px; }
-      /* line 220, sass/components/content/_posts-and-pages.scss */
+      /* line 222, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post:first-child {
         padding-top: 30px; } }
   @media (max-width: 768px) {
-    /* line 224, sass/components/content/_posts-and-pages.scss */
+    /* line 226, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post:first-child {
       padding-top: 50px; } }
-  /* line 229, sass/components/content/_posts-and-pages.scss */
+  /* line 231, sass/components/content/_posts-and-pages.scss */
   #page .taller-single-post article {
     max-width: 1140px;
     background-color: #fff;
@@ -941,14 +943,14 @@ header.site-header {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     font-family: "Inter", sans-serif; }
     @media (max-width: 768px) {
-      /* line 229, sass/components/content/_posts-and-pages.scss */
+      /* line 231, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article {
         margin-left: 11px !important;
         margin-right: 11px !important;
         width: 100% !important;
         margin-left: auto !important;
         margin-right: auto !important; } }
-    /* line 244, sass/components/content/_posts-and-pages.scss */
+    /* line 246, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .post-thumbnail img {
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -957,7 +959,7 @@ header.site-header {
       object-position: center;
       width: 100%;
       max-height: 150px; }
-    /* line 254, sass/components/content/_posts-and-pages.scss */
+    /* line 256, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article h3,
     #page .taller-single-post article h2,
     #page .taller-single-post article h4,
@@ -969,38 +971,38 @@ header.site-header {
       color: #55595c;
       font-size: 20px;
       font-weight: 700; }
-    /* line 266, sass/components/content/_posts-and-pages.scss */
+    /* line 268, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .fecha-taller {
       color: #55595c;
       font-size: 20px;
       font-weight: 400; }
-    /* line 271, sass/components/content/_posts-and-pages.scss */
+    /* line 273, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .single-taller-description {
       padding-bottom: 30px;
       color: #55595c;
       font-size: 20px;
       font-weight: 400; }
-      /* line 276, sass/components/content/_posts-and-pages.scss */
+      /* line 278, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .single-taller-description p {
         margin: 0;
         line-height: 1.6; }
-    /* line 281, sass/components/content/_posts-and-pages.scss */
+    /* line 283, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .especialistas-container {
       flex-wrap: wrap; }
-      /* line 283, sass/components/content/_posts-and-pages.scss */
+      /* line 285, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .especialistas-container .single-taller-especialista {
         margin-bottom: 20px; }
-        /* line 285, sass/components/content/_posts-and-pages.scss */
+        /* line 287, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .especialistas-container .single-taller-especialista img {
           object-fit: cover;
           object-position: center;
           width: 71px;
           height: 71px; }
-        /* line 291, sass/components/content/_posts-and-pages.scss */
+        /* line 293, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .especialistas-container .single-taller-especialista .nombre-especialidad {
           flex-wrap: wrap;
           padding-left: 15px; }
-          /* line 294, sass/components/content/_posts-and-pages.scss */
+          /* line 296, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .especialistas-container .single-taller-especialista .nombre-especialidad span {
             color: #54595f;
             font-size: 14px;
@@ -1008,7 +1010,7 @@ header.site-header {
             font-weight: 400;
             font-family: "Roboto Slab", serif;
             font-size: 14px; }
-          /* line 302, sass/components/content/_posts-and-pages.scss */
+          /* line 304, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .especialistas-container .single-taller-especialista .nombre-especialidad span:first-child {
             color: #0286ad;
             font-size: 22px;
@@ -1016,7 +1018,7 @@ header.site-header {
             align-items: flex-end;
             font-family: "Roboto", sans-serif;
             font-size: 22px; }
-    /* line 313, sass/components/content/_posts-and-pages.scss */
+    /* line 315, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .title-taller-description {
       color: #0286ad;
       padding: 15px 20px;
@@ -1026,13 +1028,13 @@ header.site-header {
       border: solid 1px #88888836;
       cursor: pointer;
       font-family: "Roboto", sans-serif; }
-      /* line 322, sass/components/content/_posts-and-pages.scss */
+      /* line 324, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .title-taller-description div {
         margin-left: 10px; }
-      /* line 325, sass/components/content/_posts-and-pages.scss */
+      /* line 327, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .title-taller-description .minus-sign {
         left: -6px; }
-    /* line 329, sass/components/content/_posts-and-pages.scss */
+    /* line 331, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .parent-container-taller-description {
       position: relative;
       -webkit-transition: max-height 1s;
@@ -1041,7 +1043,7 @@ header.site-header {
       -o-transition: max-height 1s;
       transition: max-height 1s ease;
       overflow: hidden; }
-      /* line 337, sass/components/content/_posts-and-pages.scss */
+      /* line 339, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .parent-container-taller-description .content-taller-description {
         color: #7a7a7a;
         font-size: 15px;
@@ -1066,68 +1068,68 @@ header.site-header {
         top: 0;
         line-height: 1.8;
         max-height: 800px; }
-        /* line 362, sass/components/content/_posts-and-pages.scss */
+        /* line 364, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .parent-container-taller-description .content-taller-description.positioning {
           max-height: 0; }
-      /* line 366, sass/components/content/_posts-and-pages.scss */
+      /* line 368, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .parent-container-taller-description .positioning {
         max-height: 0;
         padding: 0 25px; }
-    /* line 371, sass/components/content/_posts-and-pages.scss */
+    /* line 373, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .positioning {
       max-height: 0; }
-    /* line 374, sass/components/content/_posts-and-pages.scss */
+    /* line 376, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .opacidad1 {
       opacity: 1; }
-    /* line 377, sass/components/content/_posts-and-pages.scss */
+    /* line 379, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .cerrado {
       color: #89a0ff; }
-    /* line 380, sass/components/content/_posts-and-pages.scss */
+    /* line 382, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .video-diapo {
       margin-top: 20px;
       font-size: 16px;
       font-family: "Inter", sans-serif;
       /*flex-wrap: wrap;*/ }
       @media (max-width: 690px) {
-        /* line 380, sass/components/content/_posts-and-pages.scss */
+        /* line 382, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo {
           width: 100% !important;
           display: block !important; } }
-      /* line 389, sass/components/content/_posts-and-pages.scss */
+      /* line 391, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo div {
         background-color: #ededed;
         color: #012d3a;
         border-radius: 6px 6px 6px 6px;
         padding: 16px 24px;
         margin: 15px; }
-        /* line 395, sass/components/content/_posts-and-pages.scss */
+        /* line 397, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div:hover {
           background-color: #29cbfc;
           color: #ffffff;
           cursor: pointer; }
         @media (max-width: 690px) {
-          /* line 389, sass/components/content/_posts-and-pages.scss */
+          /* line 391, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div {
             width: 100% !important;
             margin-left: 0;
             margin-right: 0; } }
-        /* line 405, sass/components/content/_posts-and-pages.scss */
+        /* line 407, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo div a {
           color: #012d3a;
           text-decoration: none; }
-          /* line 408, sass/components/content/_posts-and-pages.scss */
+          /* line 410, sass/components/content/_posts-and-pages.scss */
           #page .taller-single-post article .video-diapo div a:hover {
             text-decoration: none; }
-      /* line 413, sass/components/content/_posts-and-pages.scss */
+      /* line 415, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .video-diapo .active {
         background-color: #0286ad;
         position: relative;
         color: #fff; }
-        /* line 417, sass/components/content/_posts-and-pages.scss */
+        /* line 419, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:hover {
           background-color: #0286ad;
           color: #fff; }
-        /* line 421, sass/components/content/_posts-and-pages.scss */
+        /* line 423, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active:after {
           content: "";
           position: absolute;
@@ -1138,23 +1140,23 @@ header.site-header {
           height: 18px;
           background-color: #0286ad;
           transform: rotate(45deg); }
-        /* line 432, sass/components/content/_posts-and-pages.scss */
+        /* line 434, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .video-diapo .active a {
           color: #fff; }
-    /* line 437, sass/components/content/_posts-and-pages.scss */
+    /* line 439, sass/components/content/_posts-and-pages.scss */
     #page .taller-single-post article .presentation-container {
       min-height: 400px;
       width: 100%;
       position: relative;
       display: block; }
-      /* line 442, sass/components/content/_posts-and-pages.scss */
+      /* line 444, sass/components/content/_posts-and-pages.scss */
       #page .taller-single-post article .presentation-container .t-video,
       #page .taller-single-post article .presentation-container .t-presentation {
         min-height: 400px;
         width: 100%;
         position: relative;
         display: block; }
-        /* line 448, sass/components/content/_posts-and-pages.scss */
+        /* line 450, sass/components/content/_posts-and-pages.scss */
         #page .taller-single-post article .presentation-container .t-video .t-video iframe,
         #page .taller-single-post article .presentation-container .t-video .t-presentation iframe,
         #page .taller-single-post article .presentation-container .t-presentation .t-video iframe,
@@ -1165,10 +1167,10 @@ header.site-header {
           position: relative;
           display: block; }
 
-/* line 461, sass/components/content/_posts-and-pages.scss */
+/* line 463, sass/components/content/_posts-and-pages.scss */
 section.directo-comments {
   padding: 0 20px 50px 20px; }
-  /* line 463, sass/components/content/_posts-and-pages.scss */
+  /* line 465, sass/components/content/_posts-and-pages.scss */
   section.directo-comments .comments-for-directo {
     max-width: 1140px;
     padding: 30px;
@@ -1182,30 +1184,30 @@ section.directo-comments {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     background-color: #fff;
     color: #55595c; }
-    /* line 476, sass/components/content/_posts-and-pages.scss */
+    /* line 478, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo a {
       color: #0286ad; }
-    /* line 480, sass/components/content/_posts-and-pages.scss */
+    /* line 482, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo .form-submit input {
       background-color: #0286ad;
       padding: 10px 16px 12px 16px;
       color: #55595c;
       font-weight: 600; }
-    /* line 487, sass/components/content/_posts-and-pages.scss */
+    /* line 489, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo input:focus-visible,
     section.directo-comments .comments-for-directo textarea:focus-visible {
       outline: #0286ad auto 1px; }
-    /* line 491, sass/components/content/_posts-and-pages.scss */
+    /* line 493, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo input {
       margin: 10px 10px 10px 0; }
-    /* line 494, sass/components/content/_posts-and-pages.scss */
+    /* line 496, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo p.comment-form-cookies-consent {
       display: flex; }
-    /* line 497, sass/components/content/_posts-and-pages.scss */
+    /* line 499, sass/components/content/_posts-and-pages.scss */
     section.directo-comments .comments-for-directo #wp-comment-cookies-consent {
       margin-top: 6px; }
 
-/* line 504, sass/components/content/_posts-and-pages.scss */
+/* line 506, sass/components/content/_posts-and-pages.scss */
 .taller-single-post.page-directo .presentation-container {
   max-width: 1140px;
   padding-bottom: 30px;

@@ -97,6 +97,19 @@
 		}
 	}
 }() );
+
+jQuery( window ).resize(function() {
+           const siteNavigation = document.getElementById( 'site-navigation' );
+		   const button = siteNavigation.getElementsByTagName( 'button' )[ 0 ];
+			siteNavigation.classList.remove( 'toggled' );
+			button.setAttribute( 'aria-expanded', 'false' );
+			siteNavigation.classList.remove( 'toggled' );
+			document.querySelector('.animated-icon2').classList.remove('open');
+		
+});
+
+
+
 /*1*/
 jQuery(document).ready(function(){
 	jQuery(".title-taller-description-2").click(function(){
