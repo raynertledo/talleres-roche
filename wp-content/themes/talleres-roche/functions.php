@@ -243,18 +243,21 @@ function dcms_modify_fields_form( $args ){
 	return $args;
 
 }
+add_filter('gettext', function( $tran, $txt, $dom ) {
+    if ( 'Leave a Reply' == $txt ) return 'Deja tu comentario o pregunta sobre la sesión';
+    return $tran;
+}, 10, 3 );
 
 
 
 
 
 
-
-add_action( 'wp_ajax_ajaxcomments', 'submit_ajax_comment' ); 
-add_action( 'wp_ajax_nopriv_ajaxcomments', 'submit_ajax_comment' ); 
+add_action( 'wp_ajax_ajaxcomments', 'submit_ajax_comment' );
+add_action( 'wp_ajax_nopriv_ajaxcomments', 'submit_ajax_comment' );
 
 function submit_ajax_comment(){
-	
+
 	$comment = wp_handle_comment_submission( wp_unslash( $_POST ) );
 	if ( is_wp_error( $comment ) ) {
 		$error_data = intval( $comment->get_error_data() );
@@ -263,24 +266,24 @@ function submit_ajax_comment(){
 		} else {
 			wp_die( 'Unknown error' );
 		}
-	} 
-	
+	}
+
 	$user = wp_get_current_user();
 	do_action('set_comment_cookies', $comment, $user);
- 
-	
+
+
 	$comment_depth = 1;
 	$comment_parent = $comment->comment_parent;
 	while( $comment_parent ){
 		$comment_depth++;
 		$parent_comment = get_comment( $comment_parent );
 		$comment_parent = $parent_comment->comment_parent;
-	} 
- 	
+	}
+
 	$GLOBALS['comment'] = $comment;
 	$GLOBALS['comment_depth'] = $comment_depth;
-	
-	
+
+
 	$comment_html = '<li ' . comment_class('', null, null, false ) . ' id="comment-' . get_comment_ID() . '">
 		<article class="comment-body" id="div-comment-' . get_comment_ID() . '">
 			<footer class="comment-meta">
@@ -290,10 +293,10 @@ function submit_ajax_comment(){
 				</div>
 				<div class="comment-metadata">
 					<a href="' . esc_url( get_comment_link( $comment->comment_ID ) ) . '">' . sprintf('%1$s at %2$s', get_comment_date(),  get_comment_time() ) . '</a>';
-					
+
 					if( $edit_link = get_edit_comment_link() )
 						$comment_html .= '<span class="edit-link"><a class="comment-edit-link" href="' . $edit_link . '">Edit</a></span>';
-					
+
 				$comment_html .= '</div>';
 				if ( $comment->comment_approved == '0' )
 					$comment_html .= '<p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>';
@@ -303,5 +306,5 @@ function submit_ajax_comment(){
 		</article>
 	</li>';
 	echo $comment_html;
-	die();	
+	die();
 }
