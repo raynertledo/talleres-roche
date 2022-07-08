@@ -1475,8 +1475,8 @@ article#post-176 {
   display: none; }
 
 /*comment sectios*/
-section.directo-comments {
-  display: none; }
+section.directo-comments .taller-comments-form input.error {
+  border: solid red 1px; }
 
 #post-176 h1.entry-title {
   display: none; }
