@@ -61,8 +61,15 @@ article#post-176 {
 }
 /*comment sectios*/
 section.directo-comments {
-  display: none;
+  .taller-comments-form{
+    input{
+      &.error{
+        border: solid red 1px;
+      }
+    }
+  }
 }
+
 #post-176 h1.entry-title {
   display: none;
 }
