@@ -242,4 +242,7 @@ function dcms_modify_fields_form( $args ){
 	return $args;
 
 }
-
+add_filter('gettext', function( $tran, $txt, $dom ) {
+    if ( 'Leave a Reply' == $txt ) return 'Deja tu comentario o pregunta sobre la sesión';
+    return $tran;
+}, 10, 3 );
