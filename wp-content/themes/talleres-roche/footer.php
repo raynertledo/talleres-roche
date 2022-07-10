@@ -14,11 +14,20 @@
 	<footer id="colophon" class="site-footer">
         <div class="container-md">
             <div class="seccion1">
-                <div class="logo-escuela">
-                    <?php if( get_field('logo_escuelas', 'option') ): ?>
-                        <img src="<?php the_field('logo_escuelas', 'option'); ?>" />
-                    <?php endif; ?>
+                <div class="left-footer">
+                    <div class="logo-escuela">
+                        <?php if( get_field('logo_escuelas', 'option') ): ?>
+                            <img src="<?php the_field('logo_escuelas', 'option'); ?>" />
+                        <?php endif; ?>
+                    </div>
+                    <div class="logo-talleres">
+                        <?php the_field('talleres_texto', 'option'); ?>
+                        <?php if( get_field('logo_talleres', 'option') ): ?>
+                            <img src="<?php the_field('logo_talleres', 'option'); ?>" />
+                        <?php endif; ?>
+                    </div>
                 </div>
+
                 <div class="seccion1a">
                     <div class="logo-footer">
                         <?php the_custom_logo(); ?>
