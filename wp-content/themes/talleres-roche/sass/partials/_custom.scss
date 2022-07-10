@@ -110,13 +110,15 @@ article#post-176 {
   }
 }
 @media screen and (max-width: 768px) {
-  footer#colophon .seccion1 .logo-escuela img {
+  footer#colophon .seccion1 .logo-escuela img,
+  footer#colophon .seccion1 .logo-talleres img{
     width: 50%;
     max-width: 240px;
   }
 }
 @media screen and (min-width: 1024px) {
-  footer#colophon .seccion1 .logo-escuela img {
+  footer#colophon .seccion1 .logo-escuela img,
+  footer#colophon .seccion1 .logo-talleres img{
     max-width: 275px;
   }
 }

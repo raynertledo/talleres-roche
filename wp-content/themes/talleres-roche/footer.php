@@ -21,7 +21,7 @@
                         <?php endif; ?>
                     </div>
                     <div class="logo-talleres">
-                        <?php the_field('talleres_texto', 'option'); ?>
+                        <p><?php the_field('talleres_texto', 'option'); ?></p>
                         <?php if( get_field('logo_talleres', 'option') ): ?>
                             <img src="<?php the_field('logo_talleres', 'option'); ?>" />
                         <?php endif; ?>

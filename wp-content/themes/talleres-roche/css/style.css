@@ -1360,6 +1360,18 @@ footer#colophon {
     justify-items: center;
     align-items: center;
     margin-bottom: 40px; }
+    footer#colophon .seccion1 .left-footer .logo-talleres {
+      font-family: "Roboto", Sans-serif;
+      font-weight: 300;
+      text-align: center;
+      color: #7a7a7a;
+      font-size: 12px;
+      line-height: 1.8; }
+      footer#colophon .seccion1 .left-footer .logo-talleres img {
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center; }
     @media (max-width: 768px) {
       footer#colophon .seccion1 {
         display: flex;

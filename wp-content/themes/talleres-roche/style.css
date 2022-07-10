@@ -1360,6 +1360,36 @@ footer#colophon {
     justify-items: center;
     align-items: center;
     margin-bottom: 40px; }
+    footer#colophon .seccion1 .left-footer .logo-talleres {
+      display: flex;
+      align-items: center;
+      margin-top: 20px; }
+      footer#colophon .seccion1 .left-footer .logo-talleres p {
+        font-family: "Roboto", Sans-serif;
+        color: #7a7a7a;
+        font-size: 12px;
+        line-height: 1.8;
+        margin-bottom: 0;
+        width: 22%;
+        border-right: 2px solid #7a7a7a;
+        padding-right: 25px; }
+        @media (max-width: 768px) {
+          footer#colophon .seccion1 .left-footer .logo-talleres p {
+            width: 28%; } }
+        @media (max-width: 375px) {
+          footer#colophon .seccion1 .left-footer .logo-talleres p {
+            width: 33%; } }
+      footer#colophon .seccion1 .left-footer .logo-talleres img {
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center; }
+        @media (max-width: 768px) {
+          footer#colophon .seccion1 .left-footer .logo-talleres img {
+            margin: 0; } }
+      @media (max-width: 768px) {
+        footer#colophon .seccion1 .left-footer .logo-talleres {
+          justify-content: space-evenly; } }
     @media (max-width: 768px) {
       footer#colophon .seccion1 {
         display: flex;
@@ -1511,11 +1541,13 @@ article#post-176 {
   footer#colophon .seccion1 .seccion1a .logo-footer a img {
     width: 62%; } }
 @media screen and (max-width: 768px) {
-  footer#colophon .seccion1 .logo-escuela img {
+  footer#colophon .seccion1 .logo-escuela img,
+  footer#colophon .seccion1 .logo-talleres img {
     width: 50%;
     max-width: 240px; } }
 @media screen and (min-width: 1024px) {
-  footer#colophon .seccion1 .logo-escuela img {
+  footer#colophon .seccion1 .logo-escuela img,
+  footer#colophon .seccion1 .logo-talleres img {
     max-width: 275px; } }
 /* Home
 

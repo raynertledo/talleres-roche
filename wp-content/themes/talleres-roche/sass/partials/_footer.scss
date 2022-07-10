@@ -8,6 +8,41 @@ footer#colophon {
     justify-items: center;
     align-items: center;
     margin-bottom: 40px;
+    .left-footer{
+      .logo-talleres{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        p{
+          font-family: "Roboto", Sans-serif;
+          color: #7a7a7a;
+          font-size: 12px;
+          line-height: 1.8;
+          margin-bottom: 0;
+          width: 22%;
+          border-right: 2px solid #7a7a7a;
+          padding-right: 25px;
+          @media (max-width:768px){
+            width: 28%;
+          }
+          @media (max-width:375px){
+            width: 33%;
+          }
+        }
+        img{
+          margin: auto;
+          display: block;
+          object-fit: cover;
+          object-position: center;
+          @media (max-width:768px){
+            margin: 0;
+          }
+        }
+        @media (max-width:768px){
+          justify-content: space-evenly;
+        }
+      }
+    }
     @media (max-width:768px){
       display: flex;
       flex-wrap: wrap;
