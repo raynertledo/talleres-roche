@@ -5,3 +5,7 @@
 .bypostauthor {
 	display: block;
 }
+
+.comment-form-cookies-consent, .taller-comments-form #email, .taller-comments-form #url, p.comment-notes {
+	display: none !important;
+}

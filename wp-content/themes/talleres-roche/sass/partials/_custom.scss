@@ -122,3 +122,13 @@ article#post-176 {
     max-width: 275px;
   }
 }
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-hidden {
+      display: none !important;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-visible {
+      display: none !important;
+  }
+}

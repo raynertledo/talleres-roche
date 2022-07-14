@@ -20,7 +20,7 @@
                             <img src="<?php the_field('logo_escuelas', 'option'); ?>" />
                         <?php endif; ?>
                     </div>
-                    <div class="logo-talleres">
+                    <div class="logo-talleres mobile-hidden">
                         <p><?php the_field('talleres_texto', 'option'); ?></p>
                         <?php if( get_field('logo_talleres', 'option') ): ?>
                             <img src="<?php the_field('logo_talleres', 'option'); ?>" />
@@ -34,6 +34,12 @@
                     </div>
                     <div class="direccion">
                         <?php the_field('direccion', 'option'); ?>
+                    </div>
+                    <div class="logo-talleres mobile-visible">
+                        <p><?php the_field('talleres_texto', 'option'); ?></p>
+                        <?php if( get_field('logo_talleres', 'option') ): ?>
+                            <img src="<?php the_field('logo_talleres', 'option'); ?>" />
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

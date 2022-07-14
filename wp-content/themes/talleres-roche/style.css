@@ -1047,6 +1047,9 @@ section.directo-comments {
 .bypostauthor {
   display: block; }
 
+.comment-form-cookies-consent, .taller-comments-form #email, .taller-comments-form #url, p.comment-notes {
+  display: none !important; }
+
 /* Widgets
 --------------------------------------------- */
 .widget {
@@ -1424,6 +1427,36 @@ footer#colophon {
       line-height: 1.8; }
     footer#colophon .seccion1 .seccion1a .direccion b {
       font-weight: 700; }
+    footer#colophon .seccion1 .seccion1a .logo-talleres {
+      display: flex;
+      align-items: center;
+      margin-top: 20px; }
+      footer#colophon .seccion1 .seccion1a .logo-talleres p {
+        font-family: "Roboto", Sans-serif;
+        color: #7a7a7a;
+        font-size: 12px;
+        line-height: 1.8;
+        margin-bottom: 0;
+        width: 22%;
+        border-right: 2px solid #7a7a7a;
+        padding-right: 25px; }
+        @media (max-width: 768px) {
+          footer#colophon .seccion1 .seccion1a .logo-talleres p {
+            width: 30%; } }
+        @media (max-width: 375px) {
+          footer#colophon .seccion1 .seccion1a .logo-talleres p {
+            width: 33%; } }
+      footer#colophon .seccion1 .seccion1a .logo-talleres img {
+        margin: auto;
+        display: block;
+        object-fit: cover;
+        object-position: center; }
+        @media (max-width: 768px) {
+          footer#colophon .seccion1 .seccion1a .logo-talleres img {
+            margin: 0; } }
+      @media (max-width: 768px) {
+        footer#colophon .seccion1 .seccion1a .logo-talleres {
+          justify-content: space-evenly; } }
   footer#colophon .site-info .creditos p {
     font-family: "Roboto", Sans-serif;
     font-size: 10px;
@@ -1549,6 +1582,12 @@ article#post-176 {
   footer#colophon .seccion1 .logo-escuela img,
   footer#colophon .seccion1 .logo-talleres img {
     max-width: 275px; } }
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-hidden {
+    display: none !important; } }
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .mobile-visible {
+    display: none !important; } }
 /* Home
 
  */
